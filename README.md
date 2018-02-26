@@ -1,6 +1,6 @@
 # Project - *CookieMeUp*
 
-**CookieMeUp** is a...
+**CookieMeUp** is an app that will allow fans of Girl Scount Cookies to be reminded of when cookies are being sold. In addition, users will be able to easily locate nearby Girl Scount Cookie stands to support local troops.
 
 
 
@@ -9,35 +9,23 @@
 The following **required** functionality is completed:
 
 - [ ] User sees app icon in home screen and styled launch screen
-- [ ] User can view locations on map
+- [ ] User can login and logout of app
+- [ ] Implement a map api
+- [ ] User can view cookie vendor locations on map
 - [ ] User can click on location to get more information
 - [ ] User can "Pull to refresh" the locations on map
-- [ ] User sees a loading stte while waiting for the the locations to load
-- [ ] 
-- [ ]
-- [ ]
-- [ ]
-- [ ]
+- [ ] User sees a loading state while waiting for the the locations to load
+- [ ] Use can have a personal accun profile
+
+
 
 
 The following **stretch** features are implemented:
 
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
+- [ ] Users can input cookie vendor locations on a map
+- [ ] Enable a chat feature for cookie connoisseurs
+- [ ] Forum for users to share their Girl Scout Cookie recipes (e.g. Thin Mint milkshake)
 
-The following **additional** features are implemented:
-
-- [ ] List anything else that you can get done to improve the app functionality!
-
-Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
-
-1.
-2.
 
 ## Video Walkthrough
 
@@ -56,7 +44,7 @@ List an 3rd party libraries, icons, graphics, or other assets you used in your a
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+
 
 ## License
 
