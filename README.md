@@ -8,12 +8,12 @@
 
 The following **required** functionality is completed:
 
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
+- [ ] User sees app icon in home screen and styled launch screen
+- [ ] User can view locations on map
+- [ ] User can click on location to get more information
+- [ ] User can "Pull to refresh" the locations on map
+- [ ] User sees a loading stte while waiting for the the locations to load
+- [ ] 
 - [ ]
 - [ ]
 - [ ]
