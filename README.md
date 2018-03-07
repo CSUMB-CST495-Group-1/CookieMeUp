@@ -27,6 +27,10 @@ The following **stretch** features are implemented:
 - [ ] Forum for users to share their Girl Scout Cookie recipes (e.g. Thin Mint milkshake)
 
 
+## Wireframe
+
+<img src='blob:null/2defb590-cb05-cf4d-951d-8271990935f2' title='Wireframe'/>
+
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
