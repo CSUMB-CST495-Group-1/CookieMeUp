@@ -29,7 +29,8 @@ The following **stretch** features are implemented:
 
 ## Wireframe
 
-<img src='blob:null/2defb590-cb05-cf4d-951d-8271990935f2' title='Wireframe'/>
+![Wireframe Image](CookieMeUp/images/cookieMeUp.pdf)
+
 
 ## Video Walkthrough
 
