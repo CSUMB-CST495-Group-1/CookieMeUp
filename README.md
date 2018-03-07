@@ -29,7 +29,7 @@ The following **stretch** features are implemented:
 
 ## Wireframe
 
-![Wireframe Image](CookieMeUp/images/cookieMeUp.pdf)
+![Wireframe Image](https://raw.githubusercontent.com/CSUMB-CST495-Group-1/CookieMeUp/master/images/cookieMeUp.png)
 
 
 ## Video Walkthrough
