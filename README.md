@@ -29,7 +29,8 @@ The following **stretch** features are implemented:
 
 ## Wireframe
 
-<img src='blob:null/2defb590-cb05-cf4d-951d-8271990935f2' title='Wireframe'/>
+![alt text](blob:null/e8fe5f06-e6c4-bd4e-a5de-074312c5fa27)
+
 
 ## Video Walkthrough
 
