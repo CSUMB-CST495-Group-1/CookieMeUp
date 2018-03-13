@@ -46,21 +46,22 @@ The following **stretch** features are implemented:
 * What are the core flows?
     - What are the key functions?
     - What screens will each user see?
-All of the users will have the same functionality and they will all be able to see the same screens across our application. The screens include: login screen, create account, map, list of stands, and the add cookie stand screen.
+    
+    * All of the users will have the same functionality and they will all be able to see the same screens across our application. The screens include: login screen, create account, map, list of stands, and the add cookie stand screen.
 
 * What will your final demo look like?
-At the end of our project our demo will show:
-    1. How the login works
-    2. How the user can create a new profile
-    3. How the user will be able to add a pinpoint with a location with a cookie stand picture
-    4. How the user can filter the cookie stands in map view or list view
-    5. How the user can view the cookie stands without login in
+    * At the end of our project our demo will show:
+        1. How the login works
+        2. How the user can create a new profile
+        3. How the user will be able to add a pinpoint with a location with a cookie stand picture
+        4. How the user can filter the cookie stands in map view or list view
+        5. How the user can view the cookie stands without login in
 
 * What mobile features do you leverage?
-Our app will leverage on the camera and the maps location.
+    * Our app will leverage on the camera and the maps location.
 
 * What are your technical concerns?
-Something we are concerned about it how to access a users current location through the app.
+    * Something we are concerned about it how to access a users current location through the app.
 
 ## Video Walkthrough
 
