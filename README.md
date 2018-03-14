@@ -37,17 +37,19 @@ The following **stretch** features are implemented:
 
 * What is your product pitch?
     - Start with a problem statement and follow up with a solution.
-    - Focus on engaging your audience with a relatable need.
+    - Focus on engaging your audience with a relatable need.  
     
+    Difficulty finding/selling Girl Scout cookies? We have the solution for you, CookieMeUp is your one stop app where you can locate, add and sell Girl Scout cookies.
 * Who are the key stakeholders for this app?
     - Who will be using this?
-    - What will they be using this for?
-
+    - What will they be using this for?  
+    
+     Girl Scouts and Girl Scout cookie lovers will be using this app.Girl Scouts will be using this app to add locations of where they are selling their cookies.Girl Scout cookie lovers will be using this app to view, search and add selling locations.
 * What are the core flows?
     - What are the key functions?
-    - What screens will each user see?
+    - What screens will each user see?  
     
-    * All of the users will have the same functionality and they will all be able to see the same screens across our application. The screens include: login screen, create account, map, list of stands, and the add cookie stand screen.
+     All of the users will have the same functionality and they will all be able to see the same screens across our application. The screens include: login screen, create account, map, list of stands, and the add cookie stand screen.
 
 * What will your final demo look like?
     * At the end of our project our demo will show:
