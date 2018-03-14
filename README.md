@@ -15,9 +15,7 @@ The following **required** functionality is completed:
 - [ ] User can click on location to get more information
 - [ ] User can "Pull to refresh" the locations on map
 - [ ] User sees a loading state while waiting for the the locations to load
-- [ ] Use can have a personal accun profile
-
-
+- [ ] User can have a personal profile account
 
 
 The following **stretch** features are implemented:
@@ -60,6 +58,8 @@ Leverage at least two mobile-oriented features (i.e. maps and camera)
 - What are your technical concerns?
 
 - What technical features do you need help or resources for?
+
+## Parse Tables and Columns
 
 
 ## Video Walkthrough

@@ -14,6 +14,10 @@
 		0D4C47752044C26200FB3FFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D4C47732044C26200FB3FFC /* LaunchScreen.storyboard */; };
 		0D4C47802044C26200FB3FFC /* CookieMeUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4C477F2044C26200FB3FFC /* CookieMeUpTests.swift */; };
 		0D4C478B2044C26200FB3FFC /* CookieMeUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4C478A2044C26200FB3FFC /* CookieMeUpUITests.swift */; };
+		0D5E2F3B2058F8A10010D4E9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5E2F3A2058F8A10010D4E9 /* LoginViewController.swift */; };
+		4407A3611A4CB4C6433CE393 /* Pods_CookieMeUpTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C620EC658BD17FA993FC2629 /* Pods_CookieMeUpTests.framework */; };
+		52B863C195533E0C3F456E32 /* Pods_CookieMeUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ED24CA871BE7BDD7FD9E04C /* Pods_CookieMeUp.framework */; };
+		C0AC3A07A367C34E0EC00508 /* Pods_CookieMeUpUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0916BAF315C1079F0B8EBE /* Pods_CookieMeUpUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,16 @@
 		0D4C47862044C26200FB3FFC /* CookieMeUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookieMeUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D4C478A2044C26200FB3FFC /* CookieMeUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieMeUpUITests.swift; sourceTree = "<group>"; };
 		0D4C478C2044C26200FB3FFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D5E2F3A2058F8A10010D4E9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3636F0E087E117562C6D55E6 /* Pods-CookieMeUpUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookieMeUpUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CookieMeUpUITests/Pods-CookieMeUpUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4ED24CA871BE7BDD7FD9E04C /* Pods_CookieMeUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CookieMeUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		634E1D2150CDDEC895B2A8C6 /* Pods-CookieMeUpTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookieMeUpTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CookieMeUpTests/Pods-CookieMeUpTests.release.xcconfig"; sourceTree = "<group>"; };
+		83CEF452F029EBD0541FE800 /* Pods-CookieMeUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookieMeUp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CookieMeUp/Pods-CookieMeUp.debug.xcconfig"; sourceTree = "<group>"; };
+		C39E582B1EB7D050BD78FDC3 /* Pods-CookieMeUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookieMeUp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CookieMeUp/Pods-CookieMeUp.release.xcconfig"; sourceTree = "<group>"; };
+		C620EC658BD17FA993FC2629 /* Pods_CookieMeUpTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CookieMeUpTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA0916BAF315C1079F0B8EBE /* Pods_CookieMeUpUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CookieMeUpUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3E8A5F76D950FD5BEA04DE2 /* Pods-CookieMeUpUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookieMeUpUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CookieMeUpUITests/Pods-CookieMeUpUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FF2E7DACAD612CB594A79C9A /* Pods-CookieMeUpTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookieMeUpTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CookieMeUpTests/Pods-CookieMeUpTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52B863C195533E0C3F456E32 /* Pods_CookieMeUp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4407A3611A4CB4C6433CE393 /* Pods_CookieMeUpTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0AC3A07A367C34E0EC00508 /* Pods_CookieMeUpUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +98,8 @@
 				0D4C477E2044C26200FB3FFC /* CookieMeUpTests */,
 				0D4C47892044C26200FB3FFC /* CookieMeUpUITests */,
 				0D4C47682044C26100FB3FFC /* Products */,
+				B607E19D300F4D6A45FE0C1F /* Pods */,
+				18E185DC14042180A44464E7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +116,8 @@
 		0D4C47692044C26100FB3FFC /* CookieMeUp */ = {
 			isa = PBXGroup;
 			children = (
+				0D5E2F392058F8820010D4E9 /* ViewControllers */,
 				0D4C476A2044C26100FB3FFC /* AppDelegate.swift */,
-				0D4C476C2044C26200FB3FFC /* ViewController.swift */,
 				0D4C476E2044C26200FB3FFC /* Main.storyboard */,
 				0D4C47712044C26200FB3FFC /* Assets.xcassets */,
 				0D4C47732044C26200FB3FFC /* LaunchScreen.storyboard */,
@@ -125,6 +144,38 @@
 			path = CookieMeUpUITests;
 			sourceTree = "<group>";
 		};
+		0D5E2F392058F8820010D4E9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0D4C476C2044C26200FB3FFC /* ViewController.swift */,
+				0D5E2F3A2058F8A10010D4E9 /* LoginViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		18E185DC14042180A44464E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4ED24CA871BE7BDD7FD9E04C /* Pods_CookieMeUp.framework */,
+				C620EC658BD17FA993FC2629 /* Pods_CookieMeUpTests.framework */,
+				CA0916BAF315C1079F0B8EBE /* Pods_CookieMeUpUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B607E19D300F4D6A45FE0C1F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83CEF452F029EBD0541FE800 /* Pods-CookieMeUp.debug.xcconfig */,
+				C39E582B1EB7D050BD78FDC3 /* Pods-CookieMeUp.release.xcconfig */,
+				FF2E7DACAD612CB594A79C9A /* Pods-CookieMeUpTests.debug.xcconfig */,
+				634E1D2150CDDEC895B2A8C6 /* Pods-CookieMeUpTests.release.xcconfig */,
+				E3E8A5F76D950FD5BEA04DE2 /* Pods-CookieMeUpUITests.debug.xcconfig */,
+				3636F0E087E117562C6D55E6 /* Pods-CookieMeUpUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +183,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D4C478F2044C26200FB3FFC /* Build configuration list for PBXNativeTarget "CookieMeUp" */;
 			buildPhases = (
+				39558EC7DE1EDDE80C8FD7FC /* [CP] Check Pods Manifest.lock */,
 				0D4C47632044C26100FB3FFC /* Sources */,
 				0D4C47642044C26100FB3FFC /* Frameworks */,
 				0D4C47652044C26100FB3FFC /* Resources */,
+				0A645C98F9568B3F4F22983B /* [CP] Embed Pods Frameworks */,
+				E509CB6B099AAEA6B9BF896C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +203,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D4C47922044C26200FB3FFC /* Build configuration list for PBXNativeTarget "CookieMeUpTests" */;
 			buildPhases = (
+				D06F4A00D96A7F56C1316D47 /* [CP] Check Pods Manifest.lock */,
 				0D4C47772044C26200FB3FFC /* Sources */,
 				0D4C47782044C26200FB3FFC /* Frameworks */,
 				0D4C47792044C26200FB3FFC /* Resources */,
+				10AA165BD79C9661C1000A64 /* [CP] Embed Pods Frameworks */,
+				7140B0254AF0E5A8AFF9AFAD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +224,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D4C47952044C26200FB3FFC /* Build configuration list for PBXNativeTarget "CookieMeUpUITests" */;
 			buildPhases = (
+				78014947AB64623360180D94 /* [CP] Check Pods Manifest.lock */,
 				0D4C47822044C26200FB3FFC /* Sources */,
 				0D4C47832044C26200FB3FFC /* Frameworks */,
 				0D4C47842044C26200FB3FFC /* Resources */,
+				872F2C78FB4F4EDB120DDE2C /* [CP] Embed Pods Frameworks */,
+				BFA44B2BAF69F2D41EB3A731 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,11 +314,164 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A645C98F9568B3F4F22983B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CookieMeUp/Pods-CookieMeUp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CookieMeUp/Pods-CookieMeUp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		10AA165BD79C9661C1000A64 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CookieMeUpTests/Pods-CookieMeUpTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		39558EC7DE1EDDE80C8FD7FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CookieMeUp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7140B0254AF0E5A8AFF9AFAD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CookieMeUpTests/Pods-CookieMeUpTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78014947AB64623360180D94 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CookieMeUpUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		872F2C78FB4F4EDB120DDE2C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CookieMeUpUITests/Pods-CookieMeUpUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFA44B2BAF69F2D41EB3A731 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CookieMeUpUITests/Pods-CookieMeUpUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D06F4A00D96A7F56C1316D47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CookieMeUpTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E509CB6B099AAEA6B9BF896C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CookieMeUp/Pods-CookieMeUp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0D4C47632044C26100FB3FFC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D5E2F3B2058F8A10010D4E9 /* LoginViewController.swift in Sources */,
 				0D4C476D2044C26200FB3FFC /* ViewController.swift in Sources */,
 				0D4C476B2044C26100FB3FFC /* AppDelegate.swift in Sources */,
 			);
@@ -424,6 +637,7 @@
 		};
 		0D4C47902044C26200FB3FFC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83CEF452F029EBD0541FE800 /* Pods-CookieMeUp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -438,6 +652,7 @@
 		};
 		0D4C47912044C26200FB3FFC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C39E582B1EB7D050BD78FDC3 /* Pods-CookieMeUp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +667,7 @@
 		};
 		0D4C47932044C26200FB3FFC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF2E7DACAD612CB594A79C9A /* Pods-CookieMeUpTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -468,6 +684,7 @@
 		};
 		0D4C47942044C26200FB3FFC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 634E1D2150CDDEC895B2A8C6 /* Pods-CookieMeUpTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +701,7 @@
 		};
 		0D4C47962044C26200FB3FFC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3E8A5F76D950FD5BEA04DE2 /* Pods-CookieMeUpUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -499,6 +717,7 @@
 		};
 		0D4C47972044C26200FB3FFC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3636F0E087E117562C6D55E6 /* Pods-CookieMeUpUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
