@@ -35,7 +35,7 @@ The following **stretch** features are implemented:
 ## Considerations
 
 * What is your product pitch?
-    * Difficulty finding/selling Girl Scout cookies? We have the solution for you, CookieMeUp is your one stop app where you can locate, add and sell Girl Scout cookies.
+    * Difficulty finding/selling Girl Scout cookies when in season? We have the solution for you, CookieMeUp is your one stop app where you can locate, add and sell Girl Scout cookies.
 * Who are the key stakeholders for this app?
      * Girl Scout troops and Girl Scout cookie lovers will be using this app. Girl Scout troops will be using this app to add locations of where they are selling their cookies. Girl Scout cookie lovers will be using this app to view, search and add selling locations.
 * What are the core flows? 
