@@ -34,33 +34,26 @@ The following **stretch** features are implemented:
 
 ## Considerations
 
+* What is your product pitch?
+    * Difficulty finding/selling Girl Scout cookies? We have the solution for you, CookieMeUp is your one stop app where you can locate, add and sell Girl Scout cookies.
+* Who are the key stakeholders for this app?
+     * Girl Scout troops and Girl Scout cookie lovers will be using this app. Girl Scout troops will be using this app to add locations of where they are selling their cookies. Girl Scout cookie lovers will be using this app to view, search and add selling locations.
+* What are the core flows? 
+     * All of the users will have the same functionality and they will all be able to see the same screens across our application. The screens include: login screen, create account, map, list of stands, and the add cookie stand screen.
 
-- What is your product pitch?
-Start with a problem statement and follow up with a solution.
-Focus on engaging your audience with a relatable need.
-    Difficulty finding/selling Girl Scout cookies? We have the solution for you, CookieMeUp is your one stop
-- Who are the key stakeholders for this app?
+* What will your final demo look like?
+    * At the end of our project our demo will show:
+        1. How the login works
+        2. How the user can create a new profile
+        3. How the user will be able to add a pinpoint with a location with a cookie stand picture
+        4. How the user can filter the cookie stands in map view or list view
+        5. How the user can view the cookie stands without login in
 
-- Who will be using this?
-    Girl Scouts and Girl Scout cookie lovers will be using this app.
-- What will they be using this for?
-    Girl Scouts will be using this app to add locations of where they are selling their cookies.
-    Girl Scout cookie lovers will be using this app to view, search and add selling locations.
-- What are the core flows?
+* What mobile features do you leverage?
+    * Our app will leverage on the camera and the maps location.
 
-- What are the key functions?
-
-- What screens will each user see?
-
-- What will your final demo look like?
-Describe the flow of your final demo
-
-- What mobile features do you leverage?
-Leverage at least two mobile-oriented features (i.e. maps and camera)
-
-- What are your technical concerns?
-
-- What technical features do you need help or resources for?
+* What are your technical concerns?
+    * Something we are concerned about it how to access a users current location through the app.
 
 
 ## Video Walkthrough
