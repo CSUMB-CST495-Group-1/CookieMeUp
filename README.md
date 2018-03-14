@@ -54,6 +54,14 @@ The following **stretch** features are implemented:
     * Something we are concerned about it how to access a users current location through the app.
 
 ## Parse Tables and Columns
+**User Table**
+
+![User Table Image](https://raw.githubusercontent.com/CSUMB-CST495-Group-1/CookieMeUp/master/images/userTable.png)
+
+
+**Cookie Location Table**
+
+![Cookie Location Table Image](https://raw.githubusercontent.com/CSUMB-CST495-Group-1/CookieMeUp/master/images/cookieLocationTable.png)
 
 
 ## Video Walkthrough
