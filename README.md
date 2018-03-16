@@ -10,12 +10,13 @@ The following **required** functionality is completed:
 
 - [ ] User sees app icon in home screen and styled launch screen
 - [ ] User can login and logout of app
+- [ ] User can have a personal profile account
 - [ ] Implement a map api
 - [ ] User can view cookie vendor locations on map
 - [ ] User can click on location to get more information
 - [ ] User can "Pull to refresh" the locations on map
 - [ ] User sees a loading state while waiting for the the locations to load
-- [ ] User can have a personal profile account
+
 
 
 The following **stretch** features are implemented:
@@ -23,6 +24,8 @@ The following **stretch** features are implemented:
 - [ ] Users can input cookie vendor locations on a map
 - [ ] Enable a chat feature for cookie connoisseurs
 - [ ] Forum for users to share their Girl Scout Cookie recipes (e.g. Thin Mint milkshake)
+- [ ] Users can view a list view of all cookie vendor locations
+- [ ] Cookie vendor locations in list view will  be displayed from nearest to furthest
 
 
 ## Wireframe
@@ -52,6 +55,43 @@ The following **stretch** features are implemented:
 
 * What are your technical concerns?
     * Something we are concerned about it how to access a users current location through the app.
+    
+    
+## Milestones
+Project timeline for when major **CookieMeUp** app functionalities are due to be completed.
+
+
+**March 28, 2018**
+- [ ] Necessary models are implemented
+- [ ] User sees app icon in home screen and styled launch screen
+- [ ] User can login and logout of app
+- [ ] Implement map api
+- [ ] User can view map
+
+**April 4, 2018**
+- [ ] Add persistent user functionality
+- [ ] App can access camera and photos on device
+- [ ] User can create a profile
+- [ ] User created profile saved to Parseaccess
+- [ ] Profile information is displayed when user logs into account
+- [ ] User can upload a photo or change photo on profile
+
+**April 11, 2018**
+- [ ] User can add cookie location to map
+- [ ] User can add a photo to cookie location
+- [ ] Map displays all cookie locations
+- [ ] Pins on map display a photo and description of location
+
+**April 18, 2018**
+- [ ] User can view a list view of cookie locations
+- [ ] Cookie locations are listed from nearest to furthest from user
+- [ ] User can click on a location in list view to view location details
+- [ ] User can click on location on map to view location details
+
+**April 25, 2018**
+- [ ] Complete presentation slide deck
+- [ ] Update app design for a professional app demo
+- [ ] Practice presentation
 
 ## Parse Tables and Columns
 **User Table**
