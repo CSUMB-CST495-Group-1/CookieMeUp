@@ -39,7 +39,7 @@ The following **stretch** features are implemented:
     * Difficulty finding/selling Girl Scout cookies when in season? We have the solution for you, CookieMeUp is your one stop app where you can locate, add and sell Girl Scout cookies.
 * Who are the key stakeholders for this app?
      * Girl Scout troops and Girl Scout cookie lovers will be using this app. Girl Scout troops will be using this app to add locations of where they are selling their cookies. Girl Scout cookie lovers will be using this app to view, search and add selling locations.
-* What are the core flows? 
+* What are the core flows?
      * All of the users will have the same functionality and they will all be able to see the same screens across our application. The screens include: login screen, create account, map, list of stands, and the add cookie stand screen.
 
 * What will your final demo look like?
@@ -55,15 +55,15 @@ The following **stretch** features are implemented:
 
 * What are your technical concerns?
     * Something we are concerned about it how to access a users current location through the app.
-    
-    
+
+
 ## Milestones
 Project timeline for when major **CookieMeUp** app functionalities are due to be completed.
 
 
 **March 28, 2018**
 - [ ] Necessary models are implemented
-- [ ] User sees app icon in home screen and styled launch screen
+- [X] User sees app icon in home screen and styled launch screen
 - [x] User can login and logout of app
 - [ ] Implement map api
 - [ ] User can view map
@@ -72,7 +72,7 @@ Project timeline for when major **CookieMeUp** app functionalities are due to be
 - [ ] Add persistent user functionality
 - [ ] App can access camera and photos on device
 - [ ] User can create a profile
-- [ ] User created profile saved to Parseaccess
+- [ ] User created profile saved to Parse access
 - [ ] Profile information is displayed when user logs into account
 - [ ] User can upload a photo or change photo on profile
 
