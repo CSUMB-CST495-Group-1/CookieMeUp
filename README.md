@@ -9,7 +9,7 @@
 The following **required** functionality is completed:
 
 - [ ] User sees app icon in home screen and styled launch screen
-- [ ] User can login and logout of app
+- [x] User can login and logout of app
 - [ ] User can have a personal profile account
 - [ ] Implement a map api
 - [ ] User can view cookie vendor locations on map
@@ -64,7 +64,7 @@ Project timeline for when major **CookieMeUp** app functionalities are due to be
 **March 28, 2018**
 - [ ] Necessary models are implemented
 - [ ] User sees app icon in home screen and styled launch screen
-- [ ] User can login and logout of app
+- [x] User can login and logout of app
 - [ ] Implement map api
 - [ ] User can view map
 

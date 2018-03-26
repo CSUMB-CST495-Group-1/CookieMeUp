@@ -10,7 +10,7 @@ import UIKit
 import Parse
 
 class LoginViewController: UIViewController {
-    @IBOutlet weak var usernamefield: UITextField!
+    @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
     override func viewDidLoad() {
@@ -25,16 +25,39 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func login(_ sender: Any) {
+        PFUser.logInWithUsername(inBackground: usernameField.text!, password: passwordField.text!) { (PFUser, NSError) in
+            if (PFUser != nil){
+                print ("Login successful!")
+                
+                // TODO: Add correct segue identifier:
+                //self.performSegue(withIdentifier: "[segueID]", sender: nil)
+            } else if ((self.usernameField.text!.isEmpty) || (self.passwordField.text!.isEmpty)){
+                let alertController = UIAlertController(title: "Cannot leave a field empty.", message: "Please, try again.", preferredStyle: .alert)
+                let okAction = UIAlertAction(title: "OK", style: .default) { (action) in
+                    self.viewDidLoad()
+                }
+                alertController.addAction(okAction)
+                self.present(alertController, animated: true){
+                }
+            } else {
+                let alertController = UIAlertController(title: "Invalid Username/Password", message: "Please, try again.", preferredStyle: .alert)
+                let okAction = UIAlertAction(title: "OK", style: .default) { (action) in
+                    self.viewDidLoad()
+                }
+                alertController.addAction(okAction)
+                self.present(alertController, animated: true){}
+            }
+        }
     }
     
     @IBAction func signup(_ sender: Any) {
         let newUser = PFUser()
-        newUser.username = usernamefield.text
+        newUser.username = usernameField.text
         newUser.password = passwordField.text
         
         newUser.signUpInBackground { (success, error) in
             if success {
-                print ("Logged in!")
+                print ("Created new user!")
             } else {
                 print (error?.localizedDescription)
 
