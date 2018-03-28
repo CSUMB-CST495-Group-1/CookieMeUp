@@ -62,7 +62,7 @@ Project timeline for when major **CookieMeUp** app functionalities are due to be
 
 
 **March 28, 2018**
-- [ ] Necessary models are implemented
+- [x] Necessary models are implemented in Parse
 - [X] User sees app icon in home screen and styled launch screen
 - [x] User can login and logout of app
 - [ ] Implement map api
