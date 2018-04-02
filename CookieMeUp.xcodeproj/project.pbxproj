@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0D4C476B2044C26100FB3FFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4C476A2044C26100FB3FFC /* AppDelegate.swift */; };
-		0D4C476D2044C26200FB3FFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4C476C2044C26200FB3FFC /* ViewController.swift */; };
 		0D4C47702044C26200FB3FFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D4C476E2044C26200FB3FFC /* Main.storyboard */; };
 		0D4C47722044C26200FB3FFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D4C47712044C26200FB3FFC /* Assets.xcassets */; };
 		0D4C47752044C26200FB3FFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D4C47732044C26200FB3FFC /* LaunchScreen.storyboard */; };
@@ -41,7 +40,6 @@
 /* Begin PBXFileReference section */
 		0D4C47672044C26100FB3FFC /* CookieMeUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookieMeUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D4C476A2044C26100FB3FFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0D4C476C2044C26200FB3FFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0D4C476F2044C26200FB3FFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0D4C47712044C26200FB3FFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D4C47742044C26200FB3FFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -149,7 +147,6 @@
 		0D5E2F392058F8820010D4E9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				0D4C476C2044C26200FB3FFC /* ViewController.swift */,
 				0D5E2F3A2058F8A10010D4E9 /* LoginViewController.swift */,
 				9A5BE67B2069A0B800C59E81 /* MapViewController.swift */,
 			);
@@ -475,7 +472,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D5E2F3B2058F8A10010D4E9 /* LoginViewController.swift in Sources */,
-				0D4C476D2044C26200FB3FFC /* ViewController.swift in Sources */,
 				0D4C476B2044C26100FB3FFC /* AppDelegate.swift in Sources */,
 				9A5BE67C2069A0B800C59E81 /* MapViewController.swift in Sources */,
 			);

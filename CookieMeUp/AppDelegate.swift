@@ -27,8 +27,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if let currentUser = PFUser.current() {
             print("Welcome back \(currentUser.username!) 😀")
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            
-            // TODO: Add correct view controller info for persistent user login:
+
+            // TODO: Add correct view controller info for persistent user login:    
 //            let [viewController] = storyboard.instantiateViewController(withIdentifier: "[viewControllerID]")
 //            window?.rootViewController = [viewController]
         }

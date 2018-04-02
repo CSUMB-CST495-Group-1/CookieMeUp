@@ -29,8 +29,7 @@ class LoginViewController: UIViewController {
             if (PFUser != nil){
                 print ("Login successful!")
                 
-                // TODO: Add correct segue identifier:
-                //self.performSegue(withIdentifier: "[segueID]", sender: nil)
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
             } else if ((self.usernameField.text!.isEmpty) || (self.passwordField.text!.isEmpty)){
                 let alertController = UIAlertController(title: "Cannot leave a field empty.", message: "Please, try again.", preferredStyle: .alert)
                 let okAction = UIAlertAction(title: "OK", style: .default) { (action) in
