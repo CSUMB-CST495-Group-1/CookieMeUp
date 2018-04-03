@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,18 +19,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mdC-DJ-hwR" userLabel="UsernameField">
-                                <rect key="frame" x="111" y="311.66666666666669" width="287" height="30"/>
+                                <rect key="frame" x="111" y="311.66666666666669" width="248" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ibc-xd-xvw">
-                                <rect key="frame" x="111" y="361.66666666666669" width="287" height="30"/>
+                                <rect key="frame" x="111" y="361.66666666666669" width="248" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0e2-fh-CGF">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0e2-fh-CGF">
                                 <rect key="frame" x="219" y="415.66666666666669" width="38" height="30"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
@@ -38,14 +38,14 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cookieMeUp" translatesAutoresizingMaskIntoConstraints="NO" id="K39-tn-b3Z">
-                                <rect key="frame" x="39" y="26" width="335" height="100"/>
+                                <rect key="frame" x="39" y="26" width="296" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="296" id="2JN-Yb-6b4"/>
                                     <constraint firstAttribute="height" constant="100" id="6fq-dl-r5S"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gScoutCookie" translatesAutoresizingMaskIntoConstraints="NO" id="Lhg-17-2XN">
-                                <rect key="frame" x="130" y="131" width="153" height="125"/>
+                                <rect key="frame" x="130" y="131" width="114" height="125"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="114" id="TB4-9Q-bc6"/>
                                     <constraint firstAttribute="height" constant="125" id="q9e-0d-8Gc"/>
@@ -63,7 +63,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGr-Ey-Xj1">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGr-Ey-Xj1">
                                 <rect key="frame" x="117" y="415" width="52" height="30"/>
                                 <state key="normal" title="Sign up"/>
                                 <connections>
@@ -108,6 +108,7 @@
             </objects>
             <point key="canvasLocation" x="-274" y="33"/>
         </scene>
+
         <!--Create Profile View Controller-->
         <scene sceneID="6CZ-7c-HcE">
             <objects>
@@ -199,20 +200,36 @@
             <point key="canvasLocation" x="-275" y="1657"/>
         </scene>
         <!--View Controller-->
+
+        <!--Map View Controller-->
         <scene sceneID="pde-tZ-SW2">
             <objects>
-                <viewController id="qLz-06-xhl" sceneMemberID="viewController">
+                <viewController id="qLz-06-xhl" customClass="MapViewController" customModule="CookieMeUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ib8-Wh-3Jg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Tgk-Ow-Hit">
+                                <rect key="frame" x="0.0" y="66" width="414" height="670"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Tgk-Ow-Hit" firstAttribute="bottom" secondItem="Ib8-Wh-3Jg" secondAttribute="bottom" id="LsK-8R-bcZ"/>
+                            <constraint firstItem="Tgk-Ow-Hit" firstAttribute="leading" secondItem="Ib8-Wh-3Jg" secondAttribute="leading" id="YG5-za-YUW"/>
+                            <constraint firstItem="Tgk-Ow-Hit" firstAttribute="top" secondItem="Ib8-Wh-3Jg" secondAttribute="top" id="bQC-YY-tPC"/>
+                            <constraint firstItem="Tgk-Ow-Hit" firstAttribute="trailing" secondItem="Ib8-Wh-3Jg" secondAttribute="trailing" id="w14-0p-Exx"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="kGv-ZB-mIf"/>
                     </view>
                     <navigationItem key="navigationItem" id="Rog-Qf-Mmt"/>
+                    <connections>
+                        <outlet property="mapView" destination="Tgk-Ow-Hit" id="XoW-4H-DSS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ANh-em-7w5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2040.8" y="32.833583208395808"/>
+            <point key="canvasLocation" x="2040.5797101449277" y="32.608695652173914"/>
         </scene>
         <!--Add Pin-->
         <scene sceneID="jzB-dj-zxN">
