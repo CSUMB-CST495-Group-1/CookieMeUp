@@ -56,11 +56,21 @@ class LoginViewController: UIViewController {
         
         newUser.signUpInBackground { (success, error) in
             if success {
-                print ("Created new user!")
+                print ("Logged in!")
+                self.performSegue(withIdentifier: "signUpSegue", sender: nil)
             } else {
-                print (error?.localizedDescription)
-
+                let alertController = UIAlertController(title: "Invalid Username/Password", message: "Please, try again.", preferredStyle: .alert)
+                
+                let okAction = UIAlertAction(title: "OK", style: .default) { (action) in
+                    self.viewDidLoad()
+                }
+                alertController.addAction(okAction)
+                
+                self.present(alertController, animated: true){
+                }
             }
+            
+            
         }
     }
     

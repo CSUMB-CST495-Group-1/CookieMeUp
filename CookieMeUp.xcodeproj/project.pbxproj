@@ -14,6 +14,9 @@
 		0D4C47802044C26200FB3FFC /* CookieMeUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4C477F2044C26200FB3FFC /* CookieMeUpTests.swift */; };
 		0D4C478B2044C26200FB3FFC /* CookieMeUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4C478A2044C26200FB3FFC /* CookieMeUpUITests.swift */; };
 		0D5E2F3B2058F8A10010D4E9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5E2F3A2058F8A10010D4E9 /* LoginViewController.swift */; };
+		0DCFEA0A2072E2EA0091ED75 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCFEA092072E2EA0091ED75 /* User.swift */; };
+		0DCFEA0C2072E2FD0091ED75 /* CookieLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCFEA0B2072E2FD0091ED75 /* CookieLocation.swift */; };
+		0DCFEA0E2072EA1B0091ED75 /* CreateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCFEA0D2072EA1B0091ED75 /* CreateProfileViewController.swift */; };
 		4407A3611A4CB4C6433CE393 /* Pods_CookieMeUpTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C620EC658BD17FA993FC2629 /* Pods_CookieMeUpTests.framework */; };
 		52B863C195533E0C3F456E32 /* Pods_CookieMeUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ED24CA871BE7BDD7FD9E04C /* Pods_CookieMeUp.framework */; };
 		9A5BE67C2069A0B800C59E81 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5BE67B2069A0B800C59E81 /* MapViewController.swift */; };
@@ -51,6 +54,9 @@
 		0D4C478A2044C26200FB3FFC /* CookieMeUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieMeUpUITests.swift; sourceTree = "<group>"; };
 		0D4C478C2044C26200FB3FFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D5E2F3A2058F8A10010D4E9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0DCFEA092072E2EA0091ED75 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0DCFEA0B2072E2FD0091ED75 /* CookieLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieLocation.swift; sourceTree = "<group>"; };
+		0DCFEA0D2072EA1B0091ED75 /* CreateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileViewController.swift; sourceTree = "<group>"; };
 		3636F0E087E117562C6D55E6 /* Pods-CookieMeUpUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookieMeUpUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CookieMeUpUITests/Pods-CookieMeUpUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4ED24CA871BE7BDD7FD9E04C /* Pods_CookieMeUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CookieMeUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		634E1D2150CDDEC895B2A8C6 /* Pods-CookieMeUpTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookieMeUpTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CookieMeUpTests/Pods-CookieMeUpTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +122,7 @@
 		0D4C47692044C26100FB3FFC /* CookieMeUp */ = {
 			isa = PBXGroup;
 			children = (
+				0DCFEA082072E2CB0091ED75 /* Models */,
 				0D5E2F392058F8820010D4E9 /* ViewControllers */,
 				0D4C476A2044C26100FB3FFC /* AppDelegate.swift */,
 				0D4C476E2044C26200FB3FFC /* Main.storyboard */,
@@ -149,8 +156,18 @@
 			children = (
 				0D5E2F3A2058F8A10010D4E9 /* LoginViewController.swift */,
 				9A5BE67B2069A0B800C59E81 /* MapViewController.swift */,
+				0DCFEA0D2072EA1B0091ED75 /* CreateProfileViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0DCFEA082072E2CB0091ED75 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0DCFEA092072E2EA0091ED75 /* User.swift */,
+				0DCFEA0B2072E2FD0091ED75 /* CookieLocation.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		18E185DC14042180A44464E7 /* Frameworks */ = {
@@ -471,8 +488,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DCFEA0A2072E2EA0091ED75 /* User.swift in Sources */,
+				0DCFEA0C2072E2FD0091ED75 /* CookieLocation.swift in Sources */,
 				0D5E2F3B2058F8A10010D4E9 /* LoginViewController.swift in Sources */,
 				0D4C476B2044C26100FB3FFC /* AppDelegate.swift in Sources */,
+				0DCFEA0E2072EA1B0091ED75 /* CreateProfileViewController.swift in Sources */,
 				9A5BE67C2069A0B800C59E81 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
