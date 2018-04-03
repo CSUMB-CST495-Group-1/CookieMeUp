@@ -35,8 +35,6 @@ class MapViewController: UIViewController, UIImagePickerControllerDelegate, UINa
         let imageView = annotationView?.leftCalloutAccessoryView as! UIImageView
         imageView.image = thumbnail
         
-        let detailButton = UIButton(type: .detailDisclosure)
-        annotationView?.rightCalloutAccessoryView = detailButton
         
         annotationView?.image = thumbnail
         
