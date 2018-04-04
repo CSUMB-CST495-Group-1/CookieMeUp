@@ -28,7 +28,7 @@
                                 <rect key="frame" x="111" y="361.66666666666669" width="287" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0e2-fh-CGF">
                                 <rect key="frame" x="219" y="415.66666666666669" width="38" height="30"/>
@@ -107,10 +107,10 @@
             </objects>
             <point key="canvasLocation" x="-274" y="33"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="pde-tZ-SW2">
             <objects>
-                <viewController id="qLz-06-xhl" sceneMemberID="viewController">
+                <viewController id="qLz-06-xhl" customClass="MapViewController" customModule="CookieMeUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ib8-Wh-3Jg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -127,7 +127,7 @@
         <scene sceneID="jzB-dj-zxN">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Dw8-Ph-KBa" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Add Pin" id="WxM-iz-cCi"/>
+                    <tabBarItem key="tabBarItem" title="Add Pin" image="pin-map-7" id="WxM-iz-cCi"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9qA-BI-CVE">
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
@@ -161,10 +161,10 @@
             </objects>
             <point key="canvasLocation" x="537" y="33"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="ZUI-Xg-Ggs">
             <objects>
-                <viewController id="OdI-KY-7jd" sceneMemberID="viewController">
+                <viewController id="OdI-KY-7jd" customClass="ProfileViewController" customModule="CookieMeUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zRj-VU-Y5I">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -181,7 +181,7 @@
         <scene sceneID="9Ip-vE-PEF">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gpx-AN-uF5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" image="profile_tab" id="dbF-4l-Yii"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="circle-user-7" id="dbF-4l-Yii"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fcW-L2-g6Y">
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
@@ -198,8 +198,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="circle-user-7" width="30" height="30"/>
         <image name="cookieMeUp" width="886" height="216"/>
         <image name="gScoutCookie" width="1148" height="1168"/>
-        <image name="profile_tab" width="25" height="25"/>
+        <image name="pin-map-7" width="30" height="30"/>
     </resources>
 </document>
