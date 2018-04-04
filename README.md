@@ -8,10 +8,10 @@
 
 The following **required** functionality is completed:
 
-- [ ] User sees app icon in home screen and styled launch screen
+- [x] User sees app icon in home screen and styled launch screen
 - [x] User can login and logout of app
-- [ ] User can have a personal profile account
-- [ ] Implement a map api
+- [x] User can have a personal profile account
+- [x] Implement a map api
 - [ ] User can view cookie vendor locations on map
 - [ ] User can click on location to get more information
 - [ ] User can "Pull to refresh" the locations on map
@@ -65,16 +65,16 @@ Project timeline for when major **CookieMeUp** app functionalities are due to be
 - [x] Necessary models are implemented in Parse
 - [X] User sees app icon in home screen and styled launch screen
 - [x] User can login and logout of app
-- [ ] Implement map api
-- [ ] User can view map
+- [x] Implement map api
+- [x] User can view map
 
 **April 4, 2018**
-- [ ] Add persistent user functionality
+- [x] Add persistent user functionality
 - [ ] App can access camera and photos on device
-- [ ] User can create a profile
-- [ ] User created profile saved to Parse access
+- [x] User can create a profile
+- [x] User created profile saved to Parse access
 - [ ] Profile information is displayed when user logs into account
-- [ ] User can upload a photo or change photo on profile
+- [x] User can upload a photo or change photo on profile
 
 **April 11, 2018**
 - [ ] User can add cookie location to map
