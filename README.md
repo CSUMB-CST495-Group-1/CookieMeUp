@@ -106,9 +106,15 @@ Project timeline for when major **CookieMeUp** app functionalities are due to be
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
+This walkthrough will show the progression of our project development.
+
+Here's a walkthrough of implemented milestones set #1:
 
 <img src='https://github.com/CSUMB-CST495-Group-1/CookieMeUp/blob/master/cookieMeUp.gif?raw=true' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+Here's a walkthrough of implemented milestones set #2:
+
+<img src='https://raw.githubusercontent.com/CSUMB-CST495-Group-1/CookieMeUp/master/images/CookieMeUp_Demo2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
