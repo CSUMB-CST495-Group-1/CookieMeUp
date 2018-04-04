@@ -43,8 +43,12 @@ class MapViewController: UIViewController, UIImagePickerControllerDelegate, UINa
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        //----mapview
+        //one degree of latitude is approximately 111 kilometers (69 miles) at all times.
+        let sfRegion = MKCoordinateRegionMake(CLLocationCoordinate2DMake(36.6516, -121.7978),
+                                              MKCoordinateSpanMake(0.1, 0.1))
+        mapView.setRegion(sfRegion, animated: false)
     }
 
     override func didReceiveMemoryWarning() {
