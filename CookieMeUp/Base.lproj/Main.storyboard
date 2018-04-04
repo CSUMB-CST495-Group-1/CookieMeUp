@@ -219,7 +219,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kGv-ZB-mIf"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Rog-Qf-Mmt"/>
+                    <navigationItem key="navigationItem" id="Rog-Qf-Mmt">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="e4J-7e-gbV">
+                            <connections>
+                                <action selector="logoutButton:" destination="qLz-06-xhl" id="8bM-3V-tPP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="Tgk-Ow-Hit" id="XoW-4H-DSS"/>
                     </connections>
@@ -324,7 +330,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="bId-Yd-SSw"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Profile" id="xZe-pV-YEg"/>
+                    <navigationItem key="navigationItem" title="Profile" id="xZe-pV-YEg">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="ySy-vh-PUO">
+                            <connections>
+                                <action selector="logoutButton:" destination="OdI-KY-7jd" id="xbA-E2-w31"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2X8-lp-Bil" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

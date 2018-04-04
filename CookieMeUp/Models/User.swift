@@ -45,6 +45,13 @@ class User: PFObject, PFSubclassing {
             if let imageData = UIImagePNGRepresentation(image) {
                 return PFFile(name: "image.png", data: imageData)
             }
+        } else {
+            print ("no profile image chosen")
+            let image : UIImage = UIImage(named:"profile_pic_placeholder")!
+
+            if let imageData = UIImagePNGRepresentation(image) {
+                return PFFile(name: "image.png", data: imageData)
+            }
         }
         return nil
     }
