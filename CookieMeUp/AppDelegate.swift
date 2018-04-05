@@ -29,8 +29,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
 
             // TODO: Add correct view controller info for persistent user login:    
-//            let [viewController] = storyboard.instantiateViewController(withIdentifier: "[viewControllerID]")
-//            window?.rootViewController = [viewController]
+            let tabBarViewController = storyboard.instantiateViewController(withIdentifier: "tabBarViewController")
+            window?.rootViewController = tabBarViewController
         }
         
         NotificationCenter.default.addObserver(forName: Notification.Name("didLogout"), object: nil, queue: OperationQueue.main) { (Notification) in
