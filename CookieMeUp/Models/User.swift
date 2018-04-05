@@ -19,23 +19,28 @@ class User: PFObject, PFSubclassing {
     @NSManaged var cookieLocations: Int
     
     static func parseClassName() -> String {
-        return "UserProfile"
+        return "User"
     }
     
     class func updateUserProfile(image: UIImage?, withFirstName firstName: String?, withLastName lastName: String?, withCompletion completion: PFBooleanResultBlock?) {
         
-        let userProfile = User()
-        
-        userProfile.user = PFUser.current()! // Pointer column type that points to PFUser
-        userProfile.profilePhoto = getPFFileFromImage(image: image)! // PFFile column type
-        userProfile.cookieLocations = 0
-        userProfile.firstName = firstName!
-        userProfile.lastName = lastName!
-//        user.isGirlScout = false
+        if let currentUser = PFUser.current(){
+            currentUser["firstName"] = firstName!
+            currentUser["lastName"] = lastName!
+            currentUser["profilePhoto"] = getPFFileFromImage(image: image)! // PFFile column type
+            
+            // TODO: Get girl scout status from user
+            currentUser["isGirlScout"] = false
+            
+//            TODO: Get cookie locations:
+            currentUser["cookieLocations"] = 0
 
-        
-        // Save object (following function will save the object in Parse asynchronously)
-        userProfile.saveInBackground(block: completion)
+            
+            // Save object (following function will save the object in Parse asynchronously)
+            currentUser.saveInBackground(block: completion)
+        } else {
+            print ("Invalid User: Login again")
+        }
     }
     
     class func getPFFileFromImage(image: UIImage?) -> PFFile? {
