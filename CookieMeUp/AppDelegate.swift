@@ -8,6 +8,9 @@
 
 import UIKit
 import Parse
+import GoogleMaps
+import GooglePlaces
+let googleApiKey = "AIzaSyCsHPlIsQPOafLkdtQ3aQJTmB8RmnooApI"
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-
+    GMSPlacesClient.provideAPIKey("AIzaSyCsHPlIsQPOafLkdtQ3aQJTmB8RmnooApI")
+    GMSServices.provideAPIKey("AIzaSyCsHPlIsQPOafLkdtQ3aQJTmB8RmnooApI")
+        
         Parse.initialize(
             with: ParseClientConfiguration(block: { (configuration: ParseMutableClientConfiguration) -> Void in
                 configuration.applicationId = "cookie-me-up"

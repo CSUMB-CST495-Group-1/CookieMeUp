@@ -11,6 +11,9 @@ target 'CookieMeUp' do
   #pod 'OAuthSwift', '~> 1.1.0'
   #pod 'OAuthSwiftAlamofire'
   pod 'Parse'
+  pod 'SwiftyJSON'
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
 
   target 'CookieMeUpTests' do
     inherit! :search_paths

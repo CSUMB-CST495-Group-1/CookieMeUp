@@ -1,17 +1,39 @@
 PODS:
   - Bolts/Tasks (1.9.0)
+  - GoogleMaps (2.6.0):
+    - GoogleMaps/Maps (= 2.6.0)
+  - GoogleMaps/Base (2.6.0)
+  - GoogleMaps/Maps (2.6.0):
+    - GoogleMaps/Base
+  - GooglePlaces (2.6.0):
+    - GoogleMaps/Base (= 2.6.0)
   - Parse (1.16.0):
     - Parse/Core (= 1.16.0)
   - Parse/Core (1.16.0):
     - Bolts/Tasks (~> 1.9)
+  - SwiftyJSON (4.0.0)
 
 DEPENDENCIES:
+  - GoogleMaps
+  - GooglePlaces
   - Parse
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Bolts
+    - GoogleMaps
+    - GooglePlaces
+    - Parse
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  GoogleMaps: 42f91c68b7fa2f84d5c86597b18ceb99f5414c7f
+  GooglePlaces: f6ddf33b75cef69e888907d9947c57198ed845f3
   Parse: 5b36dc2c2f0a2fd82a257ae018bc3d68cf2c24e7
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: f18df171fc279df577872acc6b76e9d7465f3fad
+PODFILE CHECKSUM: bd6dddcd0ecf80a6829cacd760e1506d01f7c569
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.0
