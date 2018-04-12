@@ -7,3 +7,22 @@
 //
 
 import Foundation
+import Parse
+
+class CookieLocation {
+
+    
+    @NSManaged var longitude : String
+    @NSManaged var latitude: String
+    @NSManaged var location_photo: PFFile
+    @NSManaged var date: Date
+    @NSManaged var start_time: Date
+    @NSManaged var ending_time: Date
+    @NSManaged var girl_scout_verified: Bool
+    @NSManaged var user: User
+    
+    static func parseClassName() -> String {
+        return "CookieLocation"
+    }
+
+}

@@ -231,6 +231,8 @@
 				0D4C47772044C26200FB3FFC /* Sources */,
 				0D4C47782044C26200FB3FFC /* Frameworks */,
 				0D4C47792044C26200FB3FFC /* Resources */,
+				F62723493390DC6F0B315733 /* [CP] Embed Pods Frameworks */,
+				733C578FCF12C3D71E08A700 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +252,8 @@
 				0D4C47822044C26200FB3FFC /* Sources */,
 				0D4C47832044C26200FB3FFC /* Frameworks */,
 				0D4C47842044C26200FB3FFC /* Resources */,
+				570CCCB9049DEFD156DBD114 /* [CP] Embed Pods Frameworks */,
+				1E47B6BD548EAF1E9EDDEFAA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -344,17 +348,34 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-CookieMeUp/Pods-CookieMeUp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+				"${BUILT_PRODUCTS_DIR}/ParseUI/ParseUI.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ParseUI.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CookieMeUp/Pods-CookieMeUp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1E47B6BD548EAF1E9EDDEFAA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CookieMeUpUITests/Pods-CookieMeUpUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		39558EC7DE1EDDE80C8FD7FC /* [CP] Check Pods Manifest.lock */ = {
@@ -373,6 +394,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		570CCCB9049DEFD156DBD114 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CookieMeUpUITests/Pods-CookieMeUpUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		733C578FCF12C3D71E08A700 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CookieMeUpTests/Pods-CookieMeUpTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		78014947AB64623360180D94 /* [CP] Check Pods Manifest.lock */ = {
@@ -429,6 +480,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CookieMeUp/Pods-CookieMeUp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F62723493390DC6F0B315733 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CookieMeUpTests/Pods-CookieMeUpTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -612,10 +678,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H9LBN9CRKW;
+				DEVELOPMENT_TEAM = 7B6S9X2948;
 				INFOPLIST_FILE = CookieMeUp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "CSUMB-CST495-Group-1.CookieMeUp2343454332";
+				PRODUCT_BUNDLE_IDENTIFIER = "CSUMB-CST495-Group-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -628,10 +694,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H9LBN9CRKW;
+				DEVELOPMENT_TEAM = 7B6S9X2948;
 				INFOPLIST_FILE = CookieMeUp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "CSUMB-CST495-Group-1.CookieMeUp2343454332";
+				PRODUCT_BUNDLE_IDENTIFIER = "CSUMB-CST495-Group-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

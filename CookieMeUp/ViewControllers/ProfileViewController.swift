@@ -7,11 +7,36 @@
 //
 
 import UIKit
+import Parse
+import ParseUI
 
 class ProfileViewController: UIViewController {
 
+    @IBOutlet weak var profilePicImageView: PFImageView!
+    @IBOutlet weak var firstNameLabel: UILabel!
+    @IBOutlet weak var lastNameLabel: UILabel!
+    @IBOutlet weak var usernameLabel: UILabel!
+    
+    var imageFile: PFFile!
+    var userName: String!
+    var firstName: String!
+    var lastName: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let user = PFUser.current().unsafelyUnwrapped
+        firstName = user["firstName"] as! String
+        lastName = user["lastName"] as! String
+        imageFile = user["profilePhoto"] as! PFFile
+        userName = user.username
+        
+        usernameLabel.text = userName
+        firstNameLabel.text = firstName
+        lastNameLabel.text = lastName
+        //profilePicImageView.image = imageFile
+        
+        
 
         // Do any additional setup after loading the view.
     }
