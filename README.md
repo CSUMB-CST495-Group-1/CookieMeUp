@@ -116,6 +116,10 @@ Here's a walkthrough of implemented milestones set #2:
 
 <img src='https://raw.githubusercontent.com/CSUMB-CST495-Group-1/CookieMeUp/master/images/CookieMeUp_Demo2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
+Here's a walkthrough of implemented milestones set #2:
+
+<img src='https://i.imgur.com/vzMGW3N.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Credits
