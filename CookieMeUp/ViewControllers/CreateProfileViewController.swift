@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import Parse
 
 class CreateProfileViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate  {
 
     @IBOutlet weak var uploadImage: UIImageView!
-    @IBOutlet weak var updateFirstNameText: UITextField!
-    @IBOutlet weak var updateLastNameText: UITextField!
+    @IBOutlet weak var firstNameText: UITextField!
+    @IBOutlet weak var lastNameText: UITextField!
+    @IBOutlet weak var usernameText: UITextField!
+    @IBOutlet weak var passwordText: UITextField!
+    @IBOutlet weak var confirmPasswordText: UITextField!
+    
     
     
     
@@ -42,16 +47,69 @@ class CreateProfileViewController: UIViewController, UIImagePickerControllerDele
     }
     
     @IBAction func submitProfileButton(_ sender: Any) {
-        User.updateUserProfile(image: uploadImage.image, withFirstName: updateFirstNameText.text, withLastName: updateLastNameText.text) { (success, error) in
-            if success {
-                print ("Saved Profile!")
+        if (passwordText.text != confirmPasswordText.text){
+            let alertController = UIAlertController(title: "Passwords do not match.", message: "Please, try again.", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .default) { (action) in
+                self.viewDidLoad()
             }
-            else {
-                print (error?.localizedDescription)
+            alertController.addAction(okAction)
+            passwordText.text = ""
+            confirmPasswordText.text = ""
+            self.present(alertController, animated: true){
             }
-//        dismiss(animated: true, completion: nil)
-        
         }
+        else if ((firstNameText.text?.isEmpty)! || (lastNameText.text?.isEmpty)! || (usernameText.text?.isEmpty)! || (passwordText.text?.isEmpty)! || (confirmPasswordText.text?.isEmpty)!) {
+            let alertController = UIAlertController(title: "Cannot submit with empty fields", message: "Please, try again.", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .default) { (action) in
+                self.viewDidLoad()
+            }
+            alertController.addAction(okAction)
+            passwordText.text = ""
+            confirmPasswordText.text = ""
+            self.present(alertController, animated: true){
+            }
+            
+        }
+        
+        else {
+            let newUser = PFUser()
+            newUser.username = usernameText.text
+            newUser.password = passwordText.text
+    
+            newUser.signUpInBackground { (success, error) in
+                if success {
+                    print ("Created Profile!")
+                    User.updateUserProfile(image: self.uploadImage.image, withFirstName: self.firstNameText.text, withLastName: self.lastNameText.text) { (success, error) in
+                        if success {
+                            print ("Saved Profile!")
+                        }
+                        else {
+                            print (error?.localizedDescription)
+                        }
+            //        dismiss(animated: true, completion: nil)
+            
+                    }
+                    self.performSegue(withIdentifier: "signUpSegue", sender: nil)
+                } else {
+                    let alertController = UIAlertController(title: "Invalid Username/Password", message: "Please, try again.", preferredStyle: .alert)
+    
+                    let okAction = UIAlertAction(title: "OK", style: .default) { (action) in
+                        self.viewDidLoad()
+                    }
+                    alertController.addAction(okAction)
+    
+                    self.present(alertController, animated: true){
+                    }
+                }
+    
+    
+            }
+            
+        }
+
+        
+        
+
     }
     
     
@@ -63,6 +121,7 @@ class CreateProfileViewController: UIViewController, UIImagePickerControllerDele
 
     
     @IBAction func cancelButton(_ sender: Any) {
+        print("profile view cancel button pressed")
     }
     
     

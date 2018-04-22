@@ -50,31 +50,32 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func signup(_ sender: Any) {
-        let newUser = PFUser()
-        newUser.username = usernameField.text
-        newUser.password = passwordField.text
-        
-        newUser.signUpInBackground { (success, error) in
-            if success {
-                print ("Logged in!")
-                self.performSegue(withIdentifier: "signUpSegue", sender: nil)
-            } else {
-                let alertController = UIAlertController(title: "Invalid Username/Password", message: "Please, try again.", preferredStyle: .alert)
-                
-                let okAction = UIAlertAction(title: "OK", style: .default) { (action) in
-                    self.viewDidLoad()
-                }
-                alertController.addAction(okAction)
-                
-                self.present(alertController, animated: true){
-                }
-            }
-            
-            
-        }
+        print("signup pressed")
+//        let newUser = PFUser()
+//        newUser.username = usernameField.text
+//        newUser.password = passwordField.text
+//
+//        newUser.signUpInBackground { (success, error) in
+//            if success {
+//                print ("Logged in!")
+//                self.performSegue(withIdentifier: "signUpSegue", sender: nil)
+//            } else {
+//                let alertController = UIAlertController(title: "Invalid Username/Password", message: "Please, try again.", preferredStyle: .alert)
+//
+//                let okAction = UIAlertAction(title: "OK", style: .default) { (action) in
+//                    self.viewDidLoad()
+//                }
+//                alertController.addAction(okAction)
+//
+//                self.present(alertController, animated: true){
+//                }
+//            }
+//
+//
+//        }
     }
-    
-    
+
+
 
 
 }
