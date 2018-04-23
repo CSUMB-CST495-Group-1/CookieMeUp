@@ -26,19 +26,24 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         
         let user = PFUser.current().unsafelyUnwrapped
-        firstName = user["firstName"] as! String
+        firstName = user ["firstName"] as! String
         lastName = user["lastName"] as! String
-        imageFile = user["profilePhoto"] as! PFFile
         userName = user.username
         
         usernameLabel.text = userName
         firstNameLabel.text = firstName
         lastNameLabel.text = lastName
-        //profilePicImageView.image = imageFile
         
-        
-
-        // Do any additional setup after loading the view.
+        if let imageFile : PFFile = user["profilePhoto"] as? PFFile {
+            imageFile.getDataInBackground(block: { (data, error) in
+                if error == nil {
+                    let image = UIImage(data: data!)
+                    self.profilePicImageView.image = image
+                } else {
+                    print(error!.localizedDescription)
+                }
+            })
+        }
     }
 
     @IBAction func logoutButton(_ sender: Any) {
