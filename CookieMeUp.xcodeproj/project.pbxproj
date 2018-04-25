@@ -22,6 +22,7 @@
 		73C6A04A207303530081D5C4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73C6A049207303530081D5C4 /* MapKit.framework */; };
 		9A5BE67C2069A0B800C59E81 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5BE67B2069A0B800C59E81 /* MapViewController.swift */; };
 		9A855B70207459FD00863C0F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A855B6F207459FD00863C0F /* ProfileViewController.swift */; };
+		9AFA3AE3208D7C8D00C91354 /* AddCookieLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFA3AE2208D7C8D00C91354 /* AddCookieLocationViewController.swift */; };
 		C0AC3A07A367C34E0EC00508 /* Pods_CookieMeUpUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0916BAF315C1079F0B8EBE /* Pods_CookieMeUpUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,7 @@
 		83CEF452F029EBD0541FE800 /* Pods-CookieMeUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookieMeUp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CookieMeUp/Pods-CookieMeUp.debug.xcconfig"; sourceTree = "<group>"; };
 		9A5BE67B2069A0B800C59E81 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		9A855B6F207459FD00863C0F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		9AFA3AE2208D7C8D00C91354 /* AddCookieLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCookieLocationViewController.swift; sourceTree = "<group>"; };
 		C39E582B1EB7D050BD78FDC3 /* Pods-CookieMeUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookieMeUp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CookieMeUp/Pods-CookieMeUp.release.xcconfig"; sourceTree = "<group>"; };
 		C620EC658BD17FA993FC2629 /* Pods_CookieMeUpTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CookieMeUpTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA0916BAF315C1079F0B8EBE /* Pods_CookieMeUpUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CookieMeUpUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,6 +165,7 @@
 				9A5BE67B2069A0B800C59E81 /* MapViewController.swift */,
 				0DCFEA0D2072EA1B0091ED75 /* CreateProfileViewController.swift */,
 				9A855B6F207459FD00863C0F /* ProfileViewController.swift */,
+				9AFA3AE2208D7C8D00C91354 /* AddCookieLocationViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -507,6 +510,7 @@
 				0DCFEA0A2072E2EA0091ED75 /* User.swift in Sources */,
 				0DCFEA0C2072E2FD0091ED75 /* CookieLocation.swift in Sources */,
 				0D5E2F3B2058F8A10010D4E9 /* LoginViewController.swift in Sources */,
+				9AFA3AE3208D7C8D00C91354 /* AddCookieLocationViewController.swift in Sources */,
 				0D4C476B2044C26100FB3FFC /* AppDelegate.swift in Sources */,
 				9A855B70207459FD00863C0F /* ProfileViewController.swift in Sources */,
 				0DCFEA0E2072EA1B0091ED75 /* CreateProfileViewController.swift in Sources */,

@@ -24,5 +24,7 @@ class CookieLocation {
     static func parseClassName() -> String {
         return "CookieLocation"
     }
+    
+    
 
 }

@@ -10,17 +10,17 @@ import UIKit
 import Parse
 import GoogleMaps
 import GooglePlaces
-let googleApiKey = "AIzaSyCsHPlIsQPOafLkdtQ3aQJTmB8RmnooApI"
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    let googleApiKey = "AIzaSyCsHPlIsQPOafLkdtQ3aQJTmB8RmnooApI"
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    GMSPlacesClient.provideAPIKey("AIzaSyCsHPlIsQPOafLkdtQ3aQJTmB8RmnooApI")
-    GMSServices.provideAPIKey("AIzaSyCsHPlIsQPOafLkdtQ3aQJTmB8RmnooApI")
+        GMSPlacesClient.provideAPIKey(googleApiKey)
+        GMSServices.provideAPIKey(googleApiKey)
         
         Parse.initialize(
             with: ParseClientConfiguration(block: { (configuration: ParseMutableClientConfiguration) -> Void in

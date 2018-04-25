@@ -36,11 +36,11 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ## GoogleMaps
 
-Copyright 2017 Google
+Copyright 2018 Google
 
 ## GooglePlaces
 
-Copyright 2017 Google
+Copyright 2018 Google
 
 ## Parse
 

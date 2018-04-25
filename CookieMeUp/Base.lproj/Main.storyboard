@@ -106,7 +106,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-274" y="33"/>
+            <point key="canvasLocation" x="-275" y="33"/>
         </scene>
         <!--Create Profile View Controller-->
         <scene sceneID="6CZ-7c-HcE">
@@ -245,7 +245,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="edO-LH-nfJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-275.36231884057975" y="1656.521739130435"/>
+            <point key="canvasLocation" x="-275" y="1534"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="pde-tZ-SW2">
@@ -259,6 +259,22 @@
                                 <rect key="frame" x="0.0" y="64" width="414" height="623"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aki-GR-D7N">
+                                <rect key="frame" x="169" y="624" width="76" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" image="pin-map-7"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadious">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="rAc-bX-Zd4" kind="push" id="xB2-VW-ZwJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -282,7 +298,51 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ANh-em-7w5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2040.5797101449277" y="32.608695652173914"/>
+            <point key="canvasLocation" x="2134.7826086956525" y="32.608695652173914"/>
+        </scene>
+        <!--Cookie Location-->
+        <scene sceneID="g7x-aF-mMr">
+            <objects>
+                <viewController id="rAc-bX-Zd4" customClass="AddCookieLocationViewController" customModule="CookieMeUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yhy-EV-KIY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a9K-id-PwY">
+                                <rect key="frame" x="0.0" y="64" width="414" height="511"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="511" id="52l-0C-Kff"/>
+                                    <constraint firstAttribute="width" constant="414" id="vtD-XG-Bq8"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tMC-mv-6xC">
+                                <rect key="frame" x="0.0" y="640" width="414" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Take a picture"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Fe-AG-8Sf">
+                                <rect key="frame" x="0.0" y="573" width="414" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Pin on man"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="a9K-id-PwY" firstAttribute="trailing" secondItem="9c3-tc-35E" secondAttribute="trailing" id="PeF-yF-5g5"/>
+                            <constraint firstItem="a9K-id-PwY" firstAttribute="top" secondItem="9c3-tc-35E" secondAttribute="top" id="UDY-Tk-c3u"/>
+                            <constraint firstItem="a9K-id-PwY" firstAttribute="leading" secondItem="9c3-tc-35E" secondAttribute="leading" id="dfH-ur-Kjj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9c3-tc-35E"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cookie Location" id="dlk-Zf-t33"/>
+                    <connections>
+                        <outlet property="mapView" destination="a9K-id-PwY" id="ghd-2m-dBY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e7v-FB-Ba5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2134.7826086956525" y="782.60869565217399"/>
         </scene>
         <!--Map-->
         <scene sceneID="jzB-dj-zxN">
@@ -301,7 +361,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D9P-hC-ZSl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1305" y="33"/>
+            <point key="canvasLocation" x="1349" y="33"/>
         </scene>
         <!--tabBarViewController-->
         <scene sceneID="UM7-Wy-cuF">
@@ -320,7 +380,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QbR-ZU-psL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="537" y="33"/>
+            <point key="canvasLocation" x="535" y="33"/>
         </scene>
         <!--Profile-->
         <scene sceneID="ZUI-Xg-Ggs">
@@ -330,6 +390,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profile_pic_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="nuT-sB-nXR">
+                                <rect key="frame" x="113" y="107" width="189" height="189"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Y3-Ez-e1B">
                                 <rect key="frame" x="188" y="373" width="159" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -352,7 +416,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UserName: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HS3-UA-QLV">
-                                <rect key="frame" x="56" y="452" width="120" height="27"/>
+                                <rect key="frame" x="53" y="452" width="120" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <nil key="textColor"/>
@@ -372,10 +436,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profile_pic_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="nuT-sB-nXR">
-                                <rect key="frame" x="113" y="107" width="189" height="189"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="bId-Yd-SSw"/>
@@ -396,7 +456,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2X8-lp-Bil" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2211.594202898551" y="784.23913043478262"/>
+            <point key="canvasLocation" x="1348" y="783"/>
         </scene>
         <!--Profile-->
         <scene sceneID="9Ip-vE-PEF">
@@ -415,7 +475,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wUA-qw-NLm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1443.4782608695652" y="784.23913043478262"/>
+            <point key="canvasLocation" x="535" y="783"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WEB-Zp-fTd">
@@ -433,7 +493,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oNj-un-vhM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-275.36231884057975" y="834.78260869565224"/>
+            <point key="canvasLocation" x="-275" y="783"/>
         </scene>
     </scenes>
     <resources>
@@ -441,9 +501,10 @@
         <image name="cookieMeUp" width="886" height="216"/>
         <image name="gScoutCookie" width="1148" height="1168"/>
         <image name="paper-map-7" width="30" height="30"/>
+        <image name="pin-map-7" width="30" height="30"/>
         <image name="profile_pic_placeholder" width="400" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="V8w-hO-g9D"/>
+        <segue reference="bz7-yS-dBZ"/>
     </inferredMetricsTieBreakers>
 </document>
