@@ -19,26 +19,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mdC-DJ-hwR" userLabel="UsernameField">
-                                <rect key="frame" x="111" y="311.66666666666669" width="287" height="30"/>
+                                <rect key="frame" x="111" y="311.66666666666669" width="248" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ibc-xd-xvw">
-                                <rect key="frame" x="111" y="361.66666666666669" width="287" height="30"/>
+                                <rect key="frame" x="111" y="361.66666666666669" width="248" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cookieMeUp" translatesAutoresizingMaskIntoConstraints="NO" id="K39-tn-b3Z">
-                                <rect key="frame" x="39" y="26" width="335" height="100"/>
+                                <rect key="frame" x="39" y="26" width="296" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="296" id="2JN-Yb-6b4"/>
                                     <constraint firstAttribute="height" constant="100" id="6fq-dl-r5S"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gScoutCookie" translatesAutoresizingMaskIntoConstraints="NO" id="Lhg-17-2XN">
-                                <rect key="frame" x="130" y="131" width="153" height="125"/>
+                                <rect key="frame" x="130" y="131" width="114" height="125"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="114" id="TB4-9Q-bc6"/>
                                     <constraint firstAttribute="height" constant="125" id="q9e-0d-8Gc"/>
@@ -57,7 +57,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGr-Ey-Xj1">
-                                <rect key="frame" x="200.66666666666666" y="686" width="52" height="30"/>
+                                <rect key="frame" x="181" y="686" width="52" height="30"/>
                                 <state key="normal" title="Sign up"/>
                                 <connections>
                                     <action selector="signup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xXg-sG-lxh"/>
@@ -65,7 +65,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0e2-fh-CGF">
-                                <rect key="frame" x="188" y="415.66666666666669" width="77" height="30"/>
+                                <rect key="frame" x="188" y="415.66666666666669" width="38" height="30"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7n7-fJ-qUd"/>
@@ -415,13 +415,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profile_pic_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="nuT-sB-nXR">
-                                <rect key="frame" x="113" y="107" width="189" height="189"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Y3-Ez-e1B">
-                                <rect key="frame" x="188" y="373" width="159" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Y3-Ez-e1B">
                                 <rect key="frame" x="186" y="389" width="56.666666666666657" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
@@ -440,9 +433,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UserName: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HS3-UA-QLV">
-                                <rect key="frame" x="53" y="452" width="120" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Name: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bii-h1-NTl">
                                 <rect key="frame" x="50" y="436" width="121" height="27"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
