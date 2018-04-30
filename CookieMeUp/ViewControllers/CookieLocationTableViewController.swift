@@ -13,8 +13,8 @@ class CookieLocationTableViewController: UIViewController, UITableViewDataSource
     var refreshControl: UIRefreshControl!
     @IBOutlet var cookieLocationTableView: UITableView!
     var locations: [PFObject] = []
-    var users: [PFObject] = []
-//    var locationUser = PFUser()
+    var users: PFUser? = nil
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,10 +41,6 @@ class CookieLocationTableViewController: UIViewController, UITableViewDataSource
     @objc func fetchLocations() {
 //        print ("Get Locations!")
         let query = PFQuery(className:"CookieLocation")
-//        let query = PFQuery(className:"_User")
-
-        //        query.order(byDescending: "createdAt")
-//        query.includeKey("user")
 
         //         fetch data asynchronously
         query.findObjectsInBackground { (locations: [PFObject]?, error: Error?) -> Void in
@@ -96,11 +92,23 @@ class CookieLocationTableViewController: UIViewController, UITableViewDataSource
 
         cell.long.text = (location["longitude"] as AnyObject).description
         cell.lat.text = (location["latitude"] as AnyObject).description
-
         cell.startTime.text = (location["start_time"] as! String)
         cell.endTime.text = (location["end_time"] as! String)
-//        cell.user.text = (location["user"] as! String)
-        
+
+        let userQuery = location["user"] as! PFUser
+        let userId = userQuery.objectId as! String
+        let query = PFQuery(className:"_User")
+        let queriedUser = query.includeKey(userId)
+  
+        do {
+            let user = try queriedUser.getObjectWithId(userId)
+            cell.user.text = (user["username"] as! String)
+
+        } catch {
+            print("error")
+        }
+
+
         return cell
 
     }

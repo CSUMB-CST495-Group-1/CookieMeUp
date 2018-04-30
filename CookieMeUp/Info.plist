@@ -27,8 +27,12 @@
 	</dict>
 	<key>NSCameraUsageDescription</key>
 	<string>Need camera access to take pictures</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Program requires GPS</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Program requires GPS</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>By accessing your location you will be able to find and add Cookie locations</string>
+	<string>Program requires GPS</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Need library access to upload images</string>
 	<key>UILaunchStoryboardName</key>
@@ -42,6 +46,9 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
@@ -50,11 +57,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-    <key>NSLocationAlwaysUsageDescription</key>
-    <string>Program requires GPS</string>
-    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-    <string>Program requires GPS</string>
-    <key>NSLocationWhenInUseUsageDescription</key>
-    <string>Program requires GPS</string>
 </dict>
 </plist>

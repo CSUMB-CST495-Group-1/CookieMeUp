@@ -52,6 +52,7 @@ class AddCookieLocationViewController: UIViewController, GMSMapViewDelegate, Dat
         super.viewDidLoad()
         
         cookieLocation["id"] = PFUser.current()
+        cookieLocation["user"] = PFUser.current()
         
         //User current location
         locationManager = CLLocationManager()
