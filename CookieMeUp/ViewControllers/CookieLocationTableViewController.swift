@@ -11,11 +11,11 @@ import Parse
 
 class CookieLocationTableViewController: UIViewController, UITableViewDataSource {
     var refreshControl: UIRefreshControl!
-    @IBOutlet var cookieLocationTableView: UITableView!
     var locations: [PFObject] = []
     var users: PFUser? = nil
 
-
+    @IBOutlet weak var cookieLocationTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
