@@ -9,7 +9,7 @@
 import Foundation
 import Parse
 
-class CookieLocation {
+class CookieLocation: UITableViewCell {
 
     
     @NSManaged var longitude : String

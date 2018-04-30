@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D48465120961CDA0056D47E /* CookieLocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D48465020961CDA0056D47E /* CookieLocationCell.swift */; };
 		0D4C476B2044C26100FB3FFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4C476A2044C26100FB3FFC /* AppDelegate.swift */; };
 		0D4C47702044C26200FB3FFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D4C476E2044C26200FB3FFC /* Main.storyboard */; };
 		0D4C47722044C26200FB3FFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D4C47712044C26200FB3FFC /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 		0D4C47802044C26200FB3FFC /* CookieMeUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4C477F2044C26200FB3FFC /* CookieMeUpTests.swift */; };
 		0D4C478B2044C26200FB3FFC /* CookieMeUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4C478A2044C26200FB3FFC /* CookieMeUpUITests.swift */; };
 		0D5E2F3B2058F8A10010D4E9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5E2F3A2058F8A10010D4E9 /* LoginViewController.swift */; };
+		0D5EB5B0209133CA007FBDEC /* CookieLocationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5EB5AF209133CA007FBDEC /* CookieLocationTableViewController.swift */; };
 		0DCFEA0A2072E2EA0091ED75 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCFEA092072E2EA0091ED75 /* User.swift */; };
 		0DCFEA0C2072E2FD0091ED75 /* CookieLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCFEA0B2072E2FD0091ED75 /* CookieLocation.swift */; };
 		0DCFEA0E2072EA1B0091ED75 /* CreateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCFEA0D2072EA1B0091ED75 /* CreateProfileViewController.swift */; };
@@ -44,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D48465020961CDA0056D47E /* CookieLocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieLocationCell.swift; sourceTree = "<group>"; };
 		0D4C47672044C26100FB3FFC /* CookieMeUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookieMeUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D4C476A2044C26100FB3FFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D4C476F2044C26200FB3FFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -57,6 +60,7 @@
 		0D4C478A2044C26200FB3FFC /* CookieMeUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieMeUpUITests.swift; sourceTree = "<group>"; };
 		0D4C478C2044C26200FB3FFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D5E2F3A2058F8A10010D4E9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0D5EB5AF209133CA007FBDEC /* CookieLocationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieLocationTableViewController.swift; sourceTree = "<group>"; };
 		0DCFEA092072E2EA0091ED75 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0DCFEA0B2072E2FD0091ED75 /* CookieLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieLocation.swift; sourceTree = "<group>"; };
 		0DCFEA0D2072EA1B0091ED75 /* CreateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +170,7 @@
 				0DCFEA0D2072EA1B0091ED75 /* CreateProfileViewController.swift */,
 				9A855B6F207459FD00863C0F /* ProfileViewController.swift */,
 				9AFA3AE2208D7C8D00C91354 /* AddCookieLocationViewController.swift */,
+				0D5EB5AF209133CA007FBDEC /* CookieLocationTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -175,6 +180,7 @@
 			children = (
 				0DCFEA092072E2EA0091ED75 /* User.swift */,
 				0DCFEA0B2072E2FD0091ED75 /* CookieLocation.swift */,
+				0D48465020961CDA0056D47E /* CookieLocationCell.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -510,6 +516,8 @@
 				0DCFEA0A2072E2EA0091ED75 /* User.swift in Sources */,
 				0DCFEA0C2072E2FD0091ED75 /* CookieLocation.swift in Sources */,
 				0D5E2F3B2058F8A10010D4E9 /* LoginViewController.swift in Sources */,
+				0D5EB5B0209133CA007FBDEC /* CookieLocationTableViewController.swift in Sources */,
+				0D48465120961CDA0056D47E /* CookieLocationCell.swift in Sources */,
 				9AFA3AE3208D7C8D00C91354 /* AddCookieLocationViewController.swift in Sources */,
 				0D4C476B2044C26100FB3FFC /* AppDelegate.swift in Sources */,
 				9A855B70207459FD00863C0F /* ProfileViewController.swift in Sources */,
