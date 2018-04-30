@@ -7,18 +7,52 @@
 //
 import UIKit
 import GoogleMaps
+import GooglePlaces
+
 class MapViewController: UIViewController {
-    @IBOutlet weak var mapView: GMSMapView!
+    @IBOutlet weak var addLocationButton: UIButton!
     
-    private let locationManager = CLLocationManager()
+    var mapView: GMSMapView!
+    var locationManager = CLLocationManager()
+    var currentLocation: CLLocation?
+    var placesClient: GMSPlacesClient!
+    
+    let defaultLocation = CLLocation(latitude: 36.651600, longitude: -121.797800)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        locationManager.delegate = self as? CLLocationManagerDelegate
-        locationManager.requestWhenInUseAuthorization()
+
+        locationManager = CLLocationManager()
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestAlwaysAuthorization()
+        locationManager.distanceFilter = 50
+        locationManager.startUpdatingLocation()
+        locationManager.delegate = self
+        
+        placesClient = GMSPlacesClient.shared()
+        
+        let camera = GMSCameraPosition.camera(withLatitude: defaultLocation.coordinate.latitude,
+                                              longitude: defaultLocation.coordinate.longitude,
+                                              zoom: 15.0)
+        mapView = GMSMapView.map(withFrame: view.bounds, camera: camera)
+        mapView.settings.myLocationButton = true
+        mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        mapView.isMyLocationEnabled = true
+        
+        // Add the map to the view, hide it until we've got a location update.
+       
+        view.addSubview(mapView)
+        pinButton()
+        view.insertSubview(addLocationButton, aboveSubview: mapView)
+        mapView.isHidden = true
+        
     }
     @IBAction func logoutButton(_ sender: Any) {
         NotificationCenter.default.post(name: NSNotification.Name("didLogout"), object: nil)
+    }
+    
+    func pinButton(){
+        addLocationButton.layer.cornerRadius = 30;
     }
     
     
@@ -27,34 +61,47 @@ class MapViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
 }
-// MARK: - CLLocationManagerDelegate
-//1
+
 extension MapViewController: CLLocationManagerDelegate {
-    // 2
-    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        // 3
-        guard status == .authorizedWhenInUse else {
-            return
-        }
-        // 4
-        locationManager.startUpdatingLocation()
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let location: CLLocation = locations.last!
+        currentLocation = location
+        print("Location: \(location)")
         
-        //5
-        mapView.isMyLocationEnabled = true
-        mapView.settings.myLocationButton = true
+        let camera = GMSCameraPosition.camera(withLatitude: location.coordinate.latitude,
+                                              longitude: location.coordinate.longitude,
+                                              zoom: 15.0)
+        if mapView.isHidden {
+            mapView.isHidden = false
+            mapView.camera = camera
+            //TO-DO: Add Pins to map
+        } else {
+            mapView.animate(to: camera)
+        }
+        
     }
     
-    // 6
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        guard let location = locations.first else {
-            return
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        switch status {
+        case .restricted:
+            print("Location access was restricted.")
+        case .denied:
+            print("User denied access to location.")
+            mapView.isHidden = false
+        case .notDetermined:
+            print("Location status not determined.")
+        case .authorizedAlways: fallthrough
+        case .authorizedWhenInUse:
+            print("Location status is OK.")
         }
-        
-        // 7
-        mapView.camera = GMSCameraPosition(target: location.coordinate, zoom: 15, bearing: 0, viewingAngle: 0)
-        
-        // 8
+    }
+    
+    // Handle location manager errors.
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         locationManager.stopUpdatingLocation()
+        print("Error: \(error)")
     }
 }
