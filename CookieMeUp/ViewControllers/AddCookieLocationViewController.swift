@@ -10,9 +10,11 @@ import UIKit
 import GoogleMaps
 import GooglePlaces
 import DateTimePicker
+import Parse
 
 class AddCookieLocationViewController: UIViewController, GMSMapViewDelegate, DateTimePickerDelegate{
     
+
     var startDatePicker: DateTimePicker?
     var endDatePicker: DateTimePicker?
     var start_picker: DateTimePicker?
@@ -25,6 +27,8 @@ class AddCookieLocationViewController: UIViewController, GMSMapViewDelegate, Dat
     var placesClient: GMSPlacesClient!
     var zoomLevel: Float = 15.0
     
+
+    
     //Search for Place w/ Auto Complete
     var resultsViewController: GMSAutocompleteResultsViewController?
     var searchController: UISearchController?
@@ -33,6 +37,9 @@ class AddCookieLocationViewController: UIViewController, GMSMapViewDelegate, Dat
     // The current place and default location
     var selectedPlace: GMSPlace?
     let defaultLocation = CLLocation(latitude: 36.651600, longitude: -121.797800)
+    
+    let cookieLocation = PFObject(className: "CookieLocation")
+
     
     @IBOutlet weak var searchView: UIView!
     @IBOutlet weak var mapSubView: UIView!
@@ -43,6 +50,8 @@ class AddCookieLocationViewController: UIViewController, GMSMapViewDelegate, Dat
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        cookieLocation["id"] = PFUser.current()
         
         //User current location
         locationManager = CLLocationManager()
@@ -170,6 +179,9 @@ class AddCookieLocationViewController: UIViewController, GMSMapViewDelegate, Dat
             let marker = GMSMarker()
             let placeMark = placemarks.first as? CLPlacemark
             marker.position = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+            self.cookieLocation["longitude"] = location.coordinate.longitude
+            self.cookieLocation["latitude"] = location.coordinate.latitude
+
             marker.title = placeMark?.name
             marker.snippet = placeMark?.locality
             marker.map = self.mapView
@@ -229,6 +241,7 @@ extension AddCookieLocationViewController: CLLocationManagerDelegate {
             marker.title = placeMark?.name
             marker.snippet = placeMark?.locality
             marker.map = self.mapView
+            
             if self.mapView.isHidden {
                 self.self.mapView.isHidden = false
                 self.mapView.camera = camera
@@ -261,6 +274,8 @@ extension AddCookieLocationViewController: CLLocationManagerDelegate {
     }
 }
 
+
+
 extension AddCookieLocationViewController: GMSAutocompleteResultsViewControllerDelegate {
     
     func resultsController(_ resultsController: GMSAutocompleteResultsViewController,
@@ -285,6 +300,36 @@ extension AddCookieLocationViewController: GMSAutocompleteResultsViewControllerD
     
     func didUpdateAutocompletePredictions(_ viewController: GMSAutocompleteViewController) {
         UIApplication.shared.isNetworkActivityIndicatorVisible = false
+    }
+    
+    @IBAction func addCookieLocation(_ sender: Any) {
+
+        cookieLocation["start_time"] = startDateLabel.text!
+        cookieLocation["end_time"] = endDateLabel.text!
+        cookieLocation["girl_scount_verified"] = 1
+
+        
+//        if (chatMessageField.text?.isEmpty)!{
+//            print ("empty chat field!")
+//            let alertController = UIAlertController(title: "Cannot post an empty chat message.", message: "Please, try again.", preferredStyle: .alert)
+//            let okAction = UIAlertAction(title: "OK", style: .default) { (action) in
+//                self.viewDidLoad()
+//            }
+//        } else {
+//            let chatMessage = PFObject(className: "Message")
+//            chatMessage["text"] = chatMessageField.text ?? ""
+//            chatMessage["user"] = PFUser.current()
+//            chatMessageField.text = "message here"
+//
+            cookieLocation.saveInBackground { (success, error) in
+                if success {
+                    print("The location was saved!")
+//                    self.chatMessageField.text = ""
+                } else if let error = error {
+                    print("Problem saving location: \(error.localizedDescription)")
+                }
+            }
+//        }
     }
 }
 

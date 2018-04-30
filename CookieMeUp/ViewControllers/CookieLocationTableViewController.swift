@@ -94,12 +94,12 @@ class CookieLocationTableViewController: UIViewController, UITableViewDataSource
         let cell = cookieLocationTableView.dequeueReusableCell(withIdentifier: "CookieLocationCell", for: indexPath) as! CookieLocationCell
         let location = locations[indexPath.row]
 
-        cell.long.text = (location["longitude"] as! String)
-        cell.lat.text = (location["latitude"] as! String)
-        cell.date.text = (location["date"] as! String)
+        cell.long.text = (location["longitude"] as AnyObject).description
+        cell.lat.text = (location["latitude"] as AnyObject).description
+
         cell.startTime.text = (location["start_time"] as! String)
         cell.endTime.text = (location["end_time"] as! String)
-        cell.user.text = (location["user"] as! String)
+//        cell.user.text = (location["user"] as! String)
         
         return cell
 

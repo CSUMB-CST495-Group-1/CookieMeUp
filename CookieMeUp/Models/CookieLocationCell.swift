@@ -12,7 +12,6 @@ class CookieLocationCell: UITableViewCell {
 
     @IBOutlet weak var long: UILabel!
     @IBOutlet weak var lat: UILabel!
-    @IBOutlet weak var date: UILabel!
     @IBOutlet weak var startTime: UILabel!
     @IBOutlet weak var endTime: UILabel!
     @IBOutlet weak var user: UILabel!

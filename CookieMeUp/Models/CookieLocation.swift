@@ -12,8 +12,8 @@ import Parse
 class CookieLocation: UITableViewCell {
 
     
-    @NSManaged var longitude : String
-    @NSManaged var latitude: String
+    @NSManaged var longitude : Double
+    @NSManaged var latitude: Double
     @NSManaged var location_photo: PFFile
     @NSManaged var date: Date
     @NSManaged var start_time: String
