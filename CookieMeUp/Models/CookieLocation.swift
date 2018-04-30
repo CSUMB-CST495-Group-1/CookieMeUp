@@ -16,8 +16,8 @@ class CookieLocation: UITableViewCell {
     @NSManaged var latitude: String
     @NSManaged var location_photo: PFFile
     @NSManaged var date: Date
-    @NSManaged var start_time: Date
-    @NSManaged var ending_time: Date
+    @NSManaged var start_time: String
+    @NSManaged var ending_time: String
     @NSManaged var girl_scout_verified: Bool
     @NSManaged var user: User
     

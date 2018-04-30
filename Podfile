@@ -14,6 +14,7 @@ target 'CookieMeUp' do
   pod 'SwiftyJSON'
   pod 'GoogleMaps'
   pod 'GooglePlaces'
+  pod 'DateTimePicker'
   pod 'ParseUI'
 
   target 'CookieMeUpTests' do
