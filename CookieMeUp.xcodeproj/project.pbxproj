@@ -167,9 +167,9 @@
 			children = (
 				0D5E2F3A2058F8A10010D4E9 /* LoginViewController.swift */,
 				9A5BE67B2069A0B800C59E81 /* MapViewController.swift */,
-				0DCFEA0D2072EA1B0091ED75 /* CreateProfileViewController.swift */,
 				9A855B6F207459FD00863C0F /* ProfileViewController.swift */,
 				9AFA3AE2208D7C8D00C91354 /* AddCookieLocationViewController.swift */,
+				0DCFEA0D2072EA1B0091ED75 /* CreateProfileViewController.swift */,
 				0D5EB5AF209133CA007FBDEC /* CookieLocationTableViewController.swift */,
 			);
 			path = ViewControllers;

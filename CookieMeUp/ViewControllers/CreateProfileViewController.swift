@@ -107,9 +107,6 @@ class CreateProfileViewController: UIViewController, UIImagePickerControllerDele
             
         }
 
-        
-        
-
     }
     
     

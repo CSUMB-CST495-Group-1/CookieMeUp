@@ -12,7 +12,7 @@ import GooglePlaces
 import DateTimePicker
 import Parse
 
-class AddCookieLocationViewController: UIViewController, GMSMapViewDelegate, DateTimePickerDelegate{
+class AddCookieLocationViewController: UIViewController, GMSMapViewDelegate, DateTimePickerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
 
     var startDatePicker: DateTimePicker?
@@ -45,6 +45,8 @@ class AddCookieLocationViewController: UIViewController, GMSMapViewDelegate, Dat
     @IBOutlet weak var mapSubView: UIView!
     @IBOutlet weak var startDateLabel: UILabel!
     @IBOutlet weak var endDateLabel: UILabel!
+    @IBOutlet weak var locationPicButton: UIButton!
+    @IBOutlet weak var locationImage: UIImageView!
     
     // ------------------
     
@@ -94,6 +96,10 @@ class AddCookieLocationViewController: UIViewController, GMSMapViewDelegate, Dat
     
     // Date Picker ------------
     
+        //Date Buttons
+    
+    
+    
         //Start Date
     @IBAction func onStartDate(_ sender: Any) {
         let min = Date().addingTimeInterval(-60 * 60 * 24 * 4)
@@ -102,16 +108,15 @@ class AddCookieLocationViewController: UIViewController, GMSMapViewDelegate, Dat
         
         picker.timeInterval = DateTimePicker.MinuteInterval.five
         
-        picker.highlightColor = UIColor(red: 189/255.0, green: 69/255.0, blue: 41/255.0, alpha: 0.90)
-        picker.darkColor = UIColor.blue
+        picker.highlightColor = UIColor(red: 189/255.0, green: 69/255.0, blue: 255/255.0, alpha: 0.90)
+        picker.darkColor = UIColor.black
         picker.doneButtonTitle = "DONE"
-        picker.doneBackgroundColor = UIColor(red: 189/255.0, green: 69/255.0, blue: 41/255.0, alpha: 0.90)
+        picker.doneBackgroundColor = UIColor(red: 34/255.0, green: 139/255.0, blue: 34/255.0, alpha: 0.90)
         picker.locale = Locale(identifier: "en_GB")
         
         picker.todayButtonTitle = "Today"
         picker.is12HourFormat = true
         picker.dateFormat = "hh:mm aa MM/dd/YYYY"
-        picker.isTimePickerOnly = true
         picker.includeMonth = false // if true the month shows at top
         picker.completionHandler = { date in
             let formatter = DateFormatter()
@@ -130,16 +135,15 @@ class AddCookieLocationViewController: UIViewController, GMSMapViewDelegate, Dat
         
         picker.timeInterval = DateTimePicker.MinuteInterval.five
         
-        picker.highlightColor = UIColor(red: 189/255.0, green: 69/255.0, blue: 41/255.0, alpha: 0.90)
-        picker.darkColor = UIColor.blue
+        picker.highlightColor = UIColor(red: 189/255.0, green: 69/255.0, blue: 255/255.0, alpha: 0.90)
+        picker.darkColor = UIColor.black
         picker.doneButtonTitle = "DONE"
-        picker.doneBackgroundColor = UIColor(red: 189/255.0, green: 69/255.0, blue: 41/255.0, alpha: 0.90)
+        picker.doneBackgroundColor = UIColor(red: 34/255.0, green: 139/255.0, blue: 34/255.0, alpha: 0.90)
         picker.locale = Locale(identifier: "en_GB")
         
         picker.todayButtonTitle = "Today"
         picker.is12HourFormat = true
         picker.dateFormat = "hh:mm aa MM/dd/YYYY"
-        picker.isTimePickerOnly = true
         picker.includeMonth = false // if true the month shows at top
         picker.completionHandler = { date in
             let formatter = DateFormatter()
@@ -155,10 +159,8 @@ class AddCookieLocationViewController: UIViewController, GMSMapViewDelegate, Dat
         endDatePicker = end_picker
 
         startDateLabel.text = start_picker?.selectedDateString
-        //startDateLabel.textColor = UIColor(red: 189/255.0, green: 69/255.0, blue: 41/255.0, alpha: 0.90)
-
         endDateLabel.text = end_picker?.selectedDateString
-        //endDateLabel.textColor = UIColor(red: 189/255.0, green: 69/255.0, blue: 41/255.0, alpha: 0.90)
+        
     }
     
     //---------
@@ -186,7 +188,6 @@ class AddCookieLocationViewController: UIViewController, GMSMapViewDelegate, Dat
             marker.title = placeMark?.name
             marker.snippet = placeMark?.locality
             marker.map = self.mapView
-            marker.icon = UIImage(named: "biscuit")
             if self.mapView.isHidden {
                 self.mapView.isHidden = false
                 self.mapView.camera = camera
@@ -195,6 +196,53 @@ class AddCookieLocationViewController: UIViewController, GMSMapViewDelegate, Dat
             }
         }
     }
+    
+    //Taking Cookie locaton picture
+    
+    @IBAction func addLocationImageButton(_ sender: Any) {
+        let vc = UIImagePickerController()
+        vc.delegate = self
+        vc.allowsEditing = true
+        
+        
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            print("Camera is available 📸")
+            vc.sourceType = .camera
+        } else {
+            print("Camera 🚫 available so we will use photo library instead")
+            vc.sourceType = .photoLibrary
+        }
+        
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        // Get the image captured by the UIImagePickerController
+        let originalImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        var editedImage = originalImage
+        editedImage = resize(image: editedImage, newSize: CGSize(width: 300, height: 300))
+        
+        // Do something with the images
+        locationImage.image = editedImage
+        
+        // Dismiss UIImagePickerController to go back to your original view controller
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func resize(image: UIImage, newSize: CGSize) -> UIImage {
+        let resizeImageView = UIImageView(frame: CGRect(origin: CGPoint(x: 0,y :0), size: CGSize(width: newSize.width, height:newSize.height)))
+        resizeImageView.contentMode = UIViewContentMode.scaleAspectFill
+        resizeImageView.image = image
+        
+        UIGraphicsBeginImageContext(resizeImageView.frame.size)
+        resizeImageView.layer.render(in: UIGraphicsGetCurrentContext()!)
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return newImage!
+    }
+    
+    // ------- 
+    
     
     
     override func didReceiveMemoryWarning() {
@@ -307,6 +355,7 @@ extension AddCookieLocationViewController: GMSAutocompleteResultsViewControllerD
 
         cookieLocation["start_time"] = startDateLabel.text!
         cookieLocation["end_time"] = endDateLabel.text!
+        cookieLocation["location_photo"] = locationImage
         cookieLocation["girl_scount_verified"] = 1
 
         
