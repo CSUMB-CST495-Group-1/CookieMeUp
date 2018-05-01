@@ -120,9 +120,9 @@ Here's a walkthrough of implemented milestones set #3:
 
 <img src='https://i.imgur.com/vzMGW3N.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-Here's a walkthrough of Cookie Me Up Demo
+Here's a walkthrough of Cookie Me Up Final Demo
 
-<img src='https://i.imgur.com/vzMGW3N.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/CSUMB-CST495-Group-1/CookieMeUp/blob/master/images/CookieMeUpDemo.gif?raw=true' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
