@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -462,6 +462,7 @@
                                         <connections>
                                             <outlet property="endTime" destination="ieR-Eq-nxo" id="Oxp-ca-z1p"/>
                                             <outlet property="lat" destination="1IY-9M-IHn" id="h4W-bf-YeP"/>
+                                            <outlet property="locationImage" destination="K4v-Ox-3Ra" id="Q41-Ne-FV4"/>
                                             <outlet property="long" destination="jR2-P3-ias" id="7lB-Pq-5hg"/>
                                             <outlet property="startTime" destination="bbP-HG-TlD" id="4IV-s6-g5D"/>
                                             <outlet property="user" destination="ahx-3A-ppq" id="2la-qM-MPv"/>
@@ -501,7 +502,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjJ-rG-DSn">
                                 <rect key="frame" x="225" y="561.33333333333337" width="169" height="30"/>
                                 <color key="backgroundColor" red="0.29654045258974981" green="0.54316703680203049" blue="0.15237561062920976" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Cokie location image">
+                                <state key="normal" title="Cookie location image">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>

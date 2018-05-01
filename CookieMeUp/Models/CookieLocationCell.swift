@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Parse
+import ParseUI
 
 class CookieLocationCell: UITableViewCell {
 
@@ -15,6 +17,7 @@ class CookieLocationCell: UITableViewCell {
     @IBOutlet weak var startTime: UILabel!
     @IBOutlet weak var endTime: UILabel!
     @IBOutlet weak var user: UILabel!
+    @IBOutlet weak var locationImage: PFImageView!
     
     
     override func awakeFromNib() {

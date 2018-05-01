@@ -350,22 +350,10 @@ extension AddCookieLocationViewController: GMSAutocompleteResultsViewControllerD
 
         cookieLocation["start_time"] = startDateLabel.text!
         cookieLocation["end_time"] = endDateLabel.text!
-        //cookieLocation["location_photo"] = locationImage
+        print(locationImage.debugDescription)
+        cookieLocation["location_photo"] = AddCookieLocationViewController.getPFFileFromImage(image: locationImage.image)! // PFFile column type
         cookieLocation["girl_scount_verified"] = 1
-
         
-//        if (chatMessageField.text?.isEmpty)!{
-//            print ("empty chat field!")
-//            let alertController = UIAlertController(title: "Cannot post an empty chat message.", message: "Please, try again.", preferredStyle: .alert)
-//            let okAction = UIAlertAction(title: "OK", style: .default) { (action) in
-//                self.viewDidLoad()
-//            }
-//        } else {
-//            let chatMessage = PFObject(className: "Message")
-//            chatMessage["text"] = chatMessageField.text ?? ""
-//            chatMessage["user"] = PFUser.current()
-//            chatMessageField.text = "message here"
-//
             cookieLocation.saveInBackground { (success, error) in
                 if success {
                     print("The location was saved!")
@@ -376,6 +364,25 @@ extension AddCookieLocationViewController: GMSAutocompleteResultsViewControllerD
             }
 //        }
     }
+    
+    class func getPFFileFromImage(image: UIImage?) -> PFFile? {
+        // check if image is not nil
+        if let image = image {
+            // get image data and check if that is not nil
+            if let imageData = UIImagePNGRepresentation(image) {
+                return PFFile(name: "image.png", data: imageData)
+            }
+        } else {
+            print ("no profile image chosen")
+            let image : UIImage = UIImage(named:"profile_pic_placeholder")!
+            
+            if let imageData = UIImagePNGRepresentation(image) {
+                return PFFile(name: "image.png", data: imageData)
+            }
+        }
+        return nil
+    }
+    
 }
 
 

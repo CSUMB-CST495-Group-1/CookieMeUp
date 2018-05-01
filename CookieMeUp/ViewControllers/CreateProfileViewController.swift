@@ -75,6 +75,7 @@ class CreateProfileViewController: UIViewController, UIImagePickerControllerDele
             let newUser = PFUser()
             newUser.username = usernameText.text
             newUser.password = passwordText.text
+            print(self.uploadImage.debugDescription)
     
             newUser.signUpInBackground { (success, error) in
                 if success {
