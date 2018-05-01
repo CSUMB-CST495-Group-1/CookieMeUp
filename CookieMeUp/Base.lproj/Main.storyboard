@@ -524,6 +524,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLq-Ca-18x">
                                 <rect key="frame" x="121" y="459" width="273" height="30"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="273" id="4Xu-AR-5DY"/>
                                     <constraint firstAttribute="height" constant="30" id="yyp-BY-eVf"/>
@@ -544,6 +545,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dbf-ZS-5Qa">
                                 <rect key="frame" x="121" y="499" width="273" height="30"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="onEndDate:" destination="rAc-bX-Zd4" eventType="touchUpInside" id="k45-wk-rsa"/>
                                 </connections>
@@ -619,11 +621,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="Cookie Location" id="dlk-Zf-t33"/>
                     <connections>
+                        <outlet property="endDateButton" destination="Dbf-ZS-5Qa" id="KJ2-jR-Sh3"/>
                         <outlet property="endDateLabel" destination="Ndd-IP-VSI" id="g84-6V-LnR"/>
                         <outlet property="locationImage" destination="h43-6d-Xa3" id="grL-IE-CD2"/>
                         <outlet property="locationPicButton" destination="cjJ-rG-DSn" id="TC1-Y5-1iS"/>
                         <outlet property="mapSubView" destination="a9K-id-PwY" id="TWc-g0-m1D"/>
                         <outlet property="searchView" destination="vbl-GK-naa" id="8w0-PL-YbH"/>
+                        <outlet property="startDateButton" destination="SLq-Ca-18x" id="RPh-nd-7tp"/>
                         <outlet property="startDateLabel" destination="ihO-5E-VJp" id="zIB-PY-HPq"/>
                     </connections>
                 </viewController>

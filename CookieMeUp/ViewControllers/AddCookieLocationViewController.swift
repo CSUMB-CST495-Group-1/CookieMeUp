@@ -47,6 +47,8 @@ class AddCookieLocationViewController: UIViewController, GMSMapViewDelegate, Dat
     @IBOutlet weak var endDateLabel: UILabel!
     @IBOutlet weak var locationPicButton: UIButton!
     @IBOutlet weak var locationImage: UIImageView!
+    @IBOutlet weak var startDateButton: UIButton!
+    @IBOutlet weak var endDateButton: UIButton!
     
     // ------------------
     
@@ -95,10 +97,6 @@ class AddCookieLocationViewController: UIViewController, GMSMapViewDelegate, Dat
     }
     
     // Date Picker ------------
-    
-        //Date Buttons
-    
-    
     
         //Start Date
     @IBAction func onStartDate(_ sender: Any) {
@@ -165,7 +163,6 @@ class AddCookieLocationViewController: UIViewController, GMSMapViewDelegate, Dat
     
     //---------
     
-    
     func zoomToSearchedLocation(){
         let geoCoder = CLGeocoder()
         
@@ -198,7 +195,6 @@ class AddCookieLocationViewController: UIViewController, GMSMapViewDelegate, Dat
     }
     
     //Taking Cookie locaton picture
-    
     @IBAction func addLocationImageButton(_ sender: Any) {
         let vc = UIImagePickerController()
         vc.delegate = self
@@ -242,9 +238,7 @@ class AddCookieLocationViewController: UIViewController, GMSMapViewDelegate, Dat
     }
     
     // ------- 
-    
-    
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
@@ -306,6 +300,7 @@ extension AddCookieLocationViewController: CLLocationManagerDelegate {
             print("Location access was restricted.")
         case .denied:
             print("User denied access to location.")
+            
             // Display the map using the default location.
             mapView.isHidden = false
         case .notDetermined:
@@ -355,7 +350,7 @@ extension AddCookieLocationViewController: GMSAutocompleteResultsViewControllerD
 
         cookieLocation["start_time"] = startDateLabel.text!
         cookieLocation["end_time"] = endDateLabel.text!
-        cookieLocation["location_photo"] = locationImage
+        //cookieLocation["location_photo"] = locationImage
         cookieLocation["girl_scount_verified"] = 1
 
         
