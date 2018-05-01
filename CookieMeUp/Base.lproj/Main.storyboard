@@ -462,6 +462,7 @@
                                         <connections>
                                             <outlet property="endTime" destination="ieR-Eq-nxo" id="Oxp-ca-z1p"/>
                                             <outlet property="lat" destination="1IY-9M-IHn" id="h4W-bf-YeP"/>
+                                            <outlet property="locationImage" destination="K4v-Ox-3Ra" id="Q41-Ne-FV4"/>
                                             <outlet property="long" destination="jR2-P3-ias" id="7lB-Pq-5hg"/>
                                             <outlet property="startTime" destination="bbP-HG-TlD" id="4IV-s6-g5D"/>
                                             <outlet property="user" destination="ahx-3A-ppq" id="2la-qM-MPv"/>

@@ -13,7 +13,8 @@ class CookieLocationTableViewController: UIViewController, UITableViewDataSource
     var refreshControl: UIRefreshControl!
     var locations: [PFObject] = []
     var users: PFUser? = nil
-
+    var imageFile: PFFile!
+    
     @IBOutlet weak var cookieLocationTableView: UITableView!
     
     override func viewDidLoad() {
@@ -106,6 +107,17 @@ class CookieLocationTableViewController: UIViewController, UITableViewDataSource
 
         } catch {
             print("error")
+        }
+
+        if let imageFile : PFFile = location["location_photo"] as? PFFile {
+            imageFile.getDataInBackground(block: { (data, error) in
+                if error == nil {
+                    let image = UIImage(data: data!)
+                    cell.locationImage.image = image
+                } else {
+                    print(error!.localizedDescription)
+                }
+            })
         }
 
 
