@@ -10,6 +10,7 @@ The following **required** functionality is completed:
 
 - [x] User sees app icon in home screen and styled launch screen
 - [x] User can login and logout of app
+- [x] User is alerted if fields are left blank to prevent account creation
 - [x] User can create a new account
 - [x] User can have a personal profile account
 - [x] Implement a map api
@@ -20,12 +21,12 @@ The following **required** functionality is completed:
 
 The following **stretch** features are implemented:
 
-- [ ] Users can view a list view of all cookie vendor locations
+- [x] Users can view a list view of all cookie vendor locations
 - [ ] User can click on location to get more information
-- [ ] User does not have to login with each app usage
+- [x] User does not have to login with each app usage
 - [x] User can add a photo of cookie location as proof
 - [ ] User sees a loading state while waiting for the the locations to load
-
+- [x] Users login info is persistent
 
 
 ## Wireframe
@@ -70,21 +71,24 @@ Project timeline for when major **CookieMeUp** app functionalities are due to be
 
 **April 4, 2018**
 - [x] App can access camera and photos on device
-- [x] Add persistent user functionality
 - [x] User can create a profile
 - [x] User created profile saved to Parse access
 - [x] User can upload a photo or change photo on profile
+- [x] Login and account creation only possible if all fields are filled
 
 **April 11, 2018**
 - [x] User can add cookie location to map
 - [x] Pins on map display cookie locations
 - [x] App can access camera and photos on device
+- [x] Google map api implemented as there were problems with previous map UI
+
 
 **April 18, 2018**
-- [ ] User can view a list view of cookie locations
-- [ ] Table view cookie locations have important information displayed
-- [ ] User can click on a location in list view to view location details
-- [ ] User can add a photo to cookie location
+- [x] User can view a list view of cookie locations
+- [x] Table view cookie locations have important information displayed
+- [x] User can add a photo to cookie location
+- [x] Add persistent user functionality
+
 
 **April 25, 2018**
 - [ ] Complete presentation slide deck
@@ -106,19 +110,22 @@ Project timeline for when major **CookieMeUp** app functionalities are due to be
 
 This walkthrough will show the progression of our project development.
 
-Here's a walkthrough of implemented milestones set #1:
+###Here's a walkthrough of implemented milestones set #1:
 
 <img src='https://github.com/CSUMB-CST495-Group-1/CookieMeUp/blob/master/cookieMeUp.gif?raw=true' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-Here's a walkthrough of implemented milestones set #2:
+###Here's a walkthrough of implemented milestones set #2:
 
 <img src='https://raw.githubusercontent.com/CSUMB-CST495-Group-1/CookieMeUp/master/images/CookieMeUp_Demo2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-Here's a walkthrough of implemented milestones set #3:
+###Here's a walkthrough of implemented milestones set #3:
 
 <img src='https://i.imgur.com/vzMGW3N.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-Here's a walkthrough of Cookie Me Up Final Demo
+###Here's a walkthrough of implemented milestones set #3:
+<img src='https://i.imgur.com/vzMGW3N.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+###Here's a walkthrough of Cookie Me Up Final Demo
 
 <img src='https://github.com/CSUMB-CST495-Group-1/CookieMeUp/blob/master/images/CookieMeUpDemo.gif?raw=true' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
