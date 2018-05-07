@@ -10,22 +10,22 @@ The following **required** functionality is completed:
 
 - [x] User sees app icon in home screen and styled launch screen
 - [x] User can login and logout of app
+- [x] User can create a new account
 - [x] User can have a personal profile account
 - [x] Implement a map api
-- [ ] User can view cookie vendor locations on map
-- [ ] User can click on location to get more information
-- [ ] User can "Pull to refresh" the locations on map
-- [ ] User sees a loading state while waiting for the the locations to load
+- [x] User can view cookie vendor locations on map
+- [x] User can add a new cookie location on map
 
 
 
 The following **stretch** features are implemented:
 
-- [ ] Users can input cookie vendor locations on a map
-- [ ] Enable a chat feature for cookie connoisseurs
-- [ ] Forum for users to share their Girl Scout Cookie recipes (e.g. Thin Mint milkshake)
 - [ ] Users can view a list view of all cookie vendor locations
-- [ ] Cookie vendor locations in list view will  be displayed from nearest to furthest
+- [ ] User can click on location to get more information
+- [ ] User does not have to login with each app usage
+- [x] User can add a photo of cookie location as proof
+- [ ] User sees a loading state while waiting for the the locations to load
+
 
 
 ## Wireframe
@@ -63,30 +63,28 @@ Project timeline for when major **CookieMeUp** app functionalities are due to be
 
 **March 28, 2018**
 - [x] Necessary models are implemented in Parse
-- [X] User sees app icon in home screen and styled launch screen
+- [x] User sees app icon in home screen and styled launch screen
 - [x] User can login and logout of app
 - [x] Implement map api
-- [x] User can view map
+
 
 **April 4, 2018**
+- [x] App can access camera and photos on device
 - [x] Add persistent user functionality
-- [ ] App can access camera and photos on device
 - [x] User can create a profile
 - [x] User created profile saved to Parse access
-- [ ] Profile information is displayed when user logs into account
 - [x] User can upload a photo or change photo on profile
 
 **April 11, 2018**
-- [ ] User can add cookie location to map
-- [ ] User can add a photo to cookie location
-- [ ] Map displays all cookie locations
-- [ ] Pins on map display a photo and description of location
+- [x] User can add cookie location to map
+- [x] Pins on map display cookie locations
+- [x] App can access camera and photos on device
 
 **April 18, 2018**
 - [ ] User can view a list view of cookie locations
-- [ ] Cookie locations are listed from nearest to furthest from user
+- [ ] Table view cookie locations have important information displayed
 - [ ] User can click on a location in list view to view location details
-- [ ] User can click on location on map to view location details
+- [ ] User can add a photo to cookie location
 
 **April 25, 2018**
 - [ ] Complete presentation slide deck
@@ -116,7 +114,7 @@ Here's a walkthrough of implemented milestones set #2:
 
 <img src='https://raw.githubusercontent.com/CSUMB-CST495-Group-1/CookieMeUp/master/images/CookieMeUp_Demo2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-Here's a walkthrough of implemented milestones set #2:
+Here's a walkthrough of implemented milestones set #3:
 
 <img src='https://i.imgur.com/vzMGW3N.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
