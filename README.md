@@ -110,23 +110,31 @@ Project timeline for when major **CookieMeUp** app functionalities are due to be
 
 This walkthrough will show the progression of our project development.
 
-###Here's a walkthrough of implemented milestones set #1:
+### Here's a walkthrough of implemented milestones set #1:
 
 <img src='https://github.com/CSUMB-CST495-Group-1/CookieMeUp/blob/master/cookieMeUp.gif?raw=true' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-###Here's a walkthrough of implemented milestones set #2:
+***
+
+### Here's a walkthrough of implemented milestones set #2:
 
 <img src='https://raw.githubusercontent.com/CSUMB-CST495-Group-1/CookieMeUp/master/images/CookieMeUp_Demo2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-###Here's a walkthrough of implemented milestones set #3:
+*** 
+
+### Here's a walkthrough of implemented milestones set #3:
 
 <img src='https://i.imgur.com/vzMGW3N.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-###Here's a walkthrough of implemented milestones set #4:
+***
+
+### Here's a walkthrough of implemented milestones set #4:
 
 <img src='https://raw.githubusercontent.com/CSUMB-CST495-Group-1/CookieMeUp/master/images/milestone4.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-###Here's a walkthrough of Cookie Me Up Final Demo
+*** 
+
+### Here's a walkthrough of Cookie Me Up Final Demo
 
 <img src='https://github.com/CSUMB-CST495-Group-1/CookieMeUp/blob/master/images/CookieMeUpDemo.gif?raw=true' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
