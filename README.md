@@ -25,7 +25,7 @@ The following **stretch** features are implemented:
 - [ ] User can click on location to get more information
 - [x] User does not have to login with each app usage
 - [x] User can add a photo of cookie location as proof
-- [ ] User sees a loading state while waiting for the the locations to load
+- [x] User sees a loading state while waiting for the the locations to load
 - [x] Users login info is persistent
 
 
@@ -91,9 +91,9 @@ Project timeline for when major **CookieMeUp** app functionalities are due to be
 
 
 **April 25, 2018**
-- [ ] Complete presentation slide deck
-- [ ] Update app design for a professional app demo
-- [ ] Practice presentation
+- [x] Create presentation "script" to follow and practice
+- [x] Update app design for a professional app demo
+- [x] Practice presentation
 
 ## Parse Tables and Columns
 **User Table**
