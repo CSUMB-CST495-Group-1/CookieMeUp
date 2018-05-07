@@ -122,7 +122,8 @@ This walkthrough will show the progression of our project development.
 
 <img src='https://i.imgur.com/vzMGW3N.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-###Here's a walkthrough of implemented milestones set #3:
+###Here's a walkthrough of implemented milestones set #4:
+
 <img src='https://raw.githubusercontent.com/CSUMB-CST495-Group-1/CookieMeUp/master/images/milestone4.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ###Here's a walkthrough of Cookie Me Up Final Demo
